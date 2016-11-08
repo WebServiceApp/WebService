@@ -2,41 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faf891f5-44bc-4771-aeac-57c3262c5245" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/main/com/DeliFood/WebServiceApplication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/main/com/DeliFood/WebServiceConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/main/com/DeliFood/api/Saying.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/main/com/DeliFood/core/Person.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/main/com/DeliFood/resources/HomePageResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/main/com/DeliFood/views/HomePageView$Template.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/main/com/DeliFood/views/HomePageView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/DeliFood/views/freemarker/deliSign.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/vendors/css/grid.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/vendors/css/normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/vendors/fonts/Lato/Lato-Black.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/vendors/fonts/Lato/Lato-BlackItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/vendors/fonts/Lato/Lato-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/vendors/fonts/Lato/Lato-BoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/vendors/fonts/Lato/Lato-Hairline.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/vendors/fonts/Lato/Lato-HairlineItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/vendors/fonts/Lato/Lato-Italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/vendors/fonts/Lato/Lato-Light.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/vendors/fonts/Lato/Lato-LightItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/vendors/fonts/Lato/Lato-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/vendors/fonts/Lato/OFL.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/WebService-1.0-SNAPSHOT-javadoc.jar" afterPath="$PROJECT_DIR$/target/WebService-1.0-SNAPSHOT-javadoc.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/WebService-1.0-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/target/WebService-1.0-SNAPSHOT-sources.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/WebService-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/WebService-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/css/img/sign/deliSign.png" afterPath="$PROJECT_DIR$/target/classes/assets/css/img/sign/deliSign.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-Black.ttf" afterPath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-Black.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-BlackItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-BlackItalic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-Bold.ttf" afterPath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-Bold.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-BoldItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-BoldItalic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-Hairline.ttf" afterPath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-Hairline.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-HairlineItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-HairlineItalic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-Italic.ttf" afterPath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-Italic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-Light.ttf" afterPath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-Light.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-LightItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-LightItalic.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-Regular.ttf" afterPath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/Lato-Regular.ttf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/original-WebService-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/original-WebService-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/allclasses-frame.html" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-frame.html" />
@@ -83,9 +51,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/overview-frame.html" afterPath="$PROJECT_DIR$/target/apidocs/overview-frame.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/overview-summary.html" afterPath="$PROJECT_DIR$/target/apidocs/overview-summary.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/overview-tree.html" afterPath="$PROJECT_DIR$/target/apidocs/overview-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/vendors/css/grid.css" afterPath="$PROJECT_DIR$/target/classes/assets/vendors/css/grid.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/vendors/css/normalize.css" afterPath="$PROJECT_DIR$/target/classes/assets/vendors/css/normalize.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/OFL.txt" afterPath="$PROJECT_DIR$/target/classes/assets/vendors/fonts/Lato/OFL.txt" />
     </list>
     <ignored path="WebService.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,86 +74,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="homePage.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/homePage.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomePageView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/DeliFood/views/HomePageView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebServiceConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/DeliFood/WebServiceConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebServiceApplication.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WebServiceApplication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/DeliFood/WebServiceApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="450">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomePageResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/DeliFood/resources/HomePageResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding>
-                <element signature="e#953#954#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AssetsBundle.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/dropwizard/dropwizard-assets/1.0.2/dropwizard-assets-1.0.2.jar!/io/dropwizard/assets/AssetsBundle.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -244,8 +137,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="39" />
+    <option name="x" value="4" />
+    <option name="y" value="194" />
     <option name="width" value="1260" />
     <option name="height" value="693" />
   </component>
@@ -274,16 +167,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -304,8 +188,27 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -780,42 +683,43 @@
       <workItem from="1478575758488" duration="3754000" />
       <workItem from="1478583370363" duration="366000" />
       <workItem from="1478584130859" duration="404000" />
+      <workItem from="1478585316212" duration="512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22938000" />
+    <option name="totallyTimeSpent" value="23450000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="39" width="1260" height="693" extended-state="0" />
+    <frame x="4" y="194" width="1260" height="693" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18635607" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49343187" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27175698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18635607" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1213,16 +1117,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/DeliFood/resources/HomePageResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#953#954#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/DeliFood/WebServiceConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1231,20 +1125,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/DeliFood/WebServiceApplication.java">
+    <entry file="file://$PROJECT_DIR$/out/production/main/com/DeliFood/WebServiceApplication.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/homePage.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        <state relative-caret-position="345">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1257,12 +1142,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/main/com/DeliFood/WebServiceApplication.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/DeliFood/resources/HomePageResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+        <state relative-caret-position="390">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#953#954#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/homePage.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/DeliFood/WebServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
