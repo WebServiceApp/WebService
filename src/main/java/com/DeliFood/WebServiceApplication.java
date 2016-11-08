@@ -2,11 +2,15 @@ package com.DeliFood;
 
 import com.DeliFood.views.HomePageView;
 import io.dropwizard.Application;
-import io.dropwizard.Bundle;
+import io.dropwizard.*;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import com.DeliFood.resources.HomePageResource;
 import io.dropwizard.views.ViewBundle;
+import io.dropwizard.Bundle;
+import io.dropwizard.assets.AssetsBundle;
+
+import javax.jws.WebService;
 
 
 public class WebServiceApplication extends Application<WebServiceConfiguration> {
@@ -23,15 +27,17 @@ public class WebServiceApplication extends Application<WebServiceConfiguration> 
     @Override
     public void initialize(final Bootstrap<WebServiceConfiguration> bootstrap) {
         // TODO: application initialization
-
         bootstrap.addBundle(new ViewBundle());
+        bootstrap.addBundle(new AssetsBundle());
+
     }
 
 
 
     @Override
     public void run(final WebServiceConfiguration configuration,
-                    final Environment environment) {
+                    final Environment environment)
+    {
         final HomePageResource homePageResource = new HomePageResource(
                 configuration.getTemplate(),
                 configuration.getDefaultName()

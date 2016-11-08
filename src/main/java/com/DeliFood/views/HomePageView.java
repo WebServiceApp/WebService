@@ -4,8 +4,7 @@ import io.dropwizard.views.View;
 public class HomePageView extends View {
 
     public enum Template {
-        FREEMARKER("freemarker/homePage.ftl"),
-        MUSTACHE("mustache/person.mustache");
+        FREEMARKER("freemarker/homePage.ftl");
 
         private String templateName;
 
