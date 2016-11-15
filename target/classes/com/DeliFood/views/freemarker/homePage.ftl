@@ -27,9 +27,9 @@
     <div class="deliLogo-text-box">
         <h1>We delivery your favorites to you </h1>
         <form class="main-input-box">
-            <input type="text" class="mainSearchBox" placeholder=" Input your delivery address" >
+            <input type="text" class="mainSearchBox" placeholder=" Enter restaurant" >
         </form>
-        <a class="btn btn-full" href="#">Find Restaurants</a>
+        <a class="btn btn-full" href="#">Browse Restaurants</a>
     </div>
 </section>
 
@@ -55,22 +55,5 @@
 
     </div>
 </footer>
-<!--<section class="section-menu">-->
-<!--<div class="row">-->
-<!--<ul class="second-nav">-->
-<!--<li><a href="#"> Burgers </a></li>-->
-<!--<li><a href="#"> Hot Dogs </a></li>-->
-<!--<li><a href="#"> Chicken & More </a></li>-->
-<!--<li><a href="#"> Salad & Veggies </a></li>-->
-<!--<li><a href="#"> Breakfast </a></li>-->
-<!--<li><a href="#"> Begerages </a></li>-->
-<!--<li><a href="#"> Coffee & Frappes </a></li>-->
-<!--<li><a href="#"> Sides </a></li>-->
-<!--<li><a href="#"> Sweets </a></li>-->
-<!--<li><a href="#"> Value </a></li>-->
-<!--<li><a href="#"> Menu </a></li>-->
-<!--</ul>-->
-<!--</div>-->
-<!--</section>-->
 </body>
 </html>

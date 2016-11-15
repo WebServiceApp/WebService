@@ -32,7 +32,7 @@ public class HomePageResource
     @GET
     @UnitOfWork
     @Produces(MediaType.TEXT_HTML)
-    public HomePageView getPersonViewFreemarker()
+    public HomePageView getHomePageViewFreemarker()
     {
         return new HomePageView(HomePageView.Template.FREEMARKER);
     }

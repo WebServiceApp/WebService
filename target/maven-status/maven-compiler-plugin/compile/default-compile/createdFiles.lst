@@ -1,1 +1,5 @@
 com/DeliFood/core/Person.class
+com/DeliFood/views/RestaurantPageView$Template.class
+com/DeliFood/views/RestaurantPageView.class
+com/DeliFood/core/Customer.class
+com/DeliFood/resources/RestaurantPageResource.class
