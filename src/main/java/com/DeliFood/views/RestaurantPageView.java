@@ -1,4 +1,6 @@
 package com.DeliFood.views;
+import java.util.List;
+import com.DeliFood.core.Restaurant;
 import io.dropwizard.views.View;
 import java.lang.String;
 /**
@@ -6,8 +8,10 @@ import java.lang.String;
  */
 public class RestaurantPageView extends View{
 
+    private List<Restaurant> restaurants;
+
     public enum Template {
-        FREEMARKER("freemarker/menuPage.ftl");
+        FREEMARKER("freemarker/restaurantPage.ftl");
 
         private String templateName;
 
@@ -20,9 +24,14 @@ public class RestaurantPageView extends View{
         }
     }
 
-    public RestaurantPageView(RestaurantPageView.Template template) {
-
+    public RestaurantPageView(RestaurantPageView.Template template, List<Restaurant> restaurants) {
         super(template.getTemplateName());
+        this.restaurants = restaurants;
+
+    }
+
+    public List<Restaurant> getRestaurants() {
+        return restaurants;
     }
 }
 

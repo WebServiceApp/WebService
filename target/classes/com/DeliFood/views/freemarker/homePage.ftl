@@ -26,8 +26,8 @@
 <section class="section-homePage">
     <div class="deliLogo-text-box">
         <h1>We delivery your favorites to you </h1>
-        <form class="main-input-box">
-            <input type="text" class="mainSearchBox" placeholder=" Enter restaurant" >
+        <#--<form class="main-input-box">-->
+            <#--<input type="text" class="mainSearchBox" placeholder=" Enter restaurant" >-->
         </form>
         <a class="btn btn-full" href="#">Browse Restaurants</a>
     </div>

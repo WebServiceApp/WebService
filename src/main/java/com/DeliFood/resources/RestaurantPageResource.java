@@ -1,5 +1,8 @@
 package com.DeliFood.resources;
 
+import java.util.List;
+
+import com.DeliFood.core.Restaurant;
 import com.DeliFood.views.RestaurantPageView;
 import com.codahale.metrics.annotation.Timed;
 
@@ -14,10 +17,14 @@ import java.util.Optional;
 import io.dropwizard.hibernate.UnitOfWork;
 
 
-
+import org.hibernate.MultiIdentifierLoadAccess;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 
 import com.DeliFood.core.Customer;
 
@@ -43,15 +50,14 @@ public class RestaurantPageResource {
     @GET
     @UnitOfWork
     @Produces(MediaType.TEXT_HTML)
-    public RestaurantPageView getRestaurantViewFreemarker(@QueryParam("cid") Long cid,
-                                                          @QueryParam("fname") String fname,
-                                                          @QueryParam("lname") String lname)
+    public RestaurantPageView getRestaurantsViewFreemarker()
     {
-        testRestaurants(cid, fname, lname);
-        return new RestaurantPageView(RestaurantPageView.Template.FREEMARKER);
+        List<Restaurant> restaurants = getRestaurants();
+        return new RestaurantPageView(RestaurantPageView.Template.FREEMARKER, restaurants);
     }
 
-    private void testRestaurants(Long cid, String fname, String lname) {
+    private List<Restaurant> getRestaurants()
+    {
         SessionFactory sessionFactory = new Configuration().configure()
                 .buildSessionFactory();
         Session session = sessionFactory.openSession();
@@ -61,11 +67,25 @@ public class RestaurantPageResource {
 //        Customer customer = new Customer(cid, fname, lname);
 //        session.save(customer);
 
-        Customer customer = session.get(Customer.class, cid);
+        //Customer customer = session.get(Customer.class, cid);
 
-        System.out.println("We have got user: " + customer.getFirstName() + " " + customer.getLastName());
+//        Restaurant restaurant = new Restaurant(rid, name, phone);
+//        session.save(restaurant);
+
+
+//        MultiIdentifierLoadAccess<Restaurant> restaurants = session.byMultipleIds(Restaurant.class);
+//        restaurants.multiLoad(restaurants(100));
+
+        List<Restaurant> restaurants = session.createCriteria(Restaurant.class).list();
+
+        for (Restaurant restaurant : restaurants) {
+            System.out.println("We have got restaurant: " + restaurant.getName() + " " + restaurant.getPhone());
+            System.out.println(restaurant.getImage());
+        }
+
         session.getTransaction().commit();
         session.close();
+        return restaurants;
     }
 
 

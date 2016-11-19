@@ -20,7 +20,7 @@ import java.util.Objects;
                 )
         }
 )
-public class Person {
+public class People {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -31,10 +31,10 @@ public class Person {
     @Column(name = "jobTitle", nullable = false)
     private String jobTitle;
 
-    public Person() {
+    public People() {
     }
 
-    public Person(String fullName, String jobTitle) {
+    public People(String fullName, String jobTitle) {
         this.fullName = fullName;
         this.jobTitle = jobTitle;
     }
@@ -68,11 +68,11 @@ public class Person {
         if (this == o) {
             return true;
         }
-        if (!(o instanceof Person)) {
+        if (!(o instanceof People)) {
             return false;
         }
 
-        final Person that = (Person) o;
+        final People that = (People) o;
 
         return Objects.equals(this.id, that.id) &&
                 Objects.equals(this.fullName, that.fullName) &&
