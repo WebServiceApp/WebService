@@ -29,7 +29,7 @@
         <#--<form class="main-input-box">-->
             <#--<input type="text" class="mainSearchBox" placeholder=" Enter restaurant" >-->
         </form>
-        <a class="btn btn-full" href="menuPage.ftl">Browse Restaurants</a>
+        <a class="btn btn-full" href="Restaurant">Browse Restaurants</a>
     </div>
 </section>
 

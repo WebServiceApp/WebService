@@ -48,8 +48,14 @@ public class WebServiceApplication extends Application<WebServiceConfiguration> 
                 configuration.getTemplate(),
                 configuration.getDefaultName()
         );
+
+        final RestaurantPageResource menuPageResource = new RestaurantPageResource(
+                configuration.getTemplate(),
+                configuration.getDefaultName()
+        );
         environment.jersey().register(homePageResource);
         environment.jersey().register(restaurantPageResource);
+        environment.jersey().register(menuPageResource);
     }
 
 }
