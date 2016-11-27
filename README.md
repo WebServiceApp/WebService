@@ -11,5 +11,7 @@ Health Check
 ---
 
 To see your applications health enter url `http://localhost:8081/healthcheck`
-# WebService
+
+Tips:
+To convert the image format to 64base. Go to the website: http://base64image.org/
 
