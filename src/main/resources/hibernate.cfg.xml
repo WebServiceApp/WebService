@@ -13,7 +13,8 @@
         <property name="hibernate.connection.password">piseth0605</property>
 
         <!-- SQL dialect -->
-        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <!--<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>-->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL94Dialect</property>
 
         <!-- Print executed SQL to stdout -->
         <property name="show_sql">true</property>
@@ -23,6 +24,8 @@
 
         <!-- Annotated entity classes -->
         <mapping class="com.DeliFood.core.Restaurant"/>
+        <mapping class="com.DeliFood.core.Customer"/>
+        <mapping class="com.DeliFood.core.People"/>
 
 
     </session-factory>
