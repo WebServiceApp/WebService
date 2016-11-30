@@ -12,7 +12,9 @@ import javax.persistence.Id;
  * Created by Fengjuan on 11/16/16.
  */
 @Entity
+//@NamedQuery(name = "com.DeliFood.cor.Restaurant.findbyAll", query = "select m from Restaurant m")
 public class Restaurant implements Serializable {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,17 +28,20 @@ public class Restaurant implements Serializable {
     private Float rating;
     private Integer priceLevel;
 
+    // @OneToMany (mappedBy = "restaurant")
+    //private Collection<Menu> menu = new ArrayList<Menu>();
+
 
     public Restaurant() {
 
-    };
+    }
 
     public Restaurant(Long restaurant_id, String name, String address) {
         this.restaurant_id =
                 restaurant_id;
         this.name = name;
         this.address = address;
-    };
+    }
 
 
     public Long getRestaurant_id() {
@@ -102,5 +107,13 @@ public class Restaurant implements Serializable {
     public Integer getPriceLevel() {return priceLevel;}
 
     public void setPriceLevel(Integer priceLevel) {this.priceLevel = priceLevel;}
+
+      /*public Collection<Menu> getMenu(){
+        return menu;
+    }
+
+    public void setMenu (Collection<Menu> menu) {
+        this.menu = menu;
+    }*/
 
 }
