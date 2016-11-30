@@ -88,7 +88,7 @@
                     <img src="/assets//css/img/sign/paypal_icon.png" alt="paypal">
                 </div>
                 <div class="col span-1-of-2 box">
-                    <img src="/assets/S/css/img/sign/visa-checkout.png" alt="paypal">
+                    <img src="/assets//css/img/sign/visa-checkout.png" alt="paypal">
                 </div>
             </div>
             <div class="row">
