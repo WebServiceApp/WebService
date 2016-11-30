@@ -7,6 +7,7 @@ import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import com.DeliFood.resources.HomePageResource;
 import com.DeliFood.resources.RestaurantPageResource;
+import com.DeliFood.resources.MenuPageResource;
 import io.dropwizard.views.ViewBundle;
 import io.dropwizard.Bundle;
 import io.dropwizard.assets.AssetsBundle;
@@ -48,8 +49,14 @@ public class WebServiceApplication extends Application<WebServiceConfiguration> 
                 configuration.getTemplate(),
                 configuration.getDefaultName()
         );
+
+        final MenuPageResource menuPageResource = new MenuPageResource(
+                configuration.getTemplate(),
+                configuration.getDefaultName()
+        );
         environment.jersey().register(homePageResource);
         environment.jersey().register(restaurantPageResource);
+        environment.jersey().register(menuPageResource);
     }
 
 }

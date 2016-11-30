@@ -1,11 +1,12 @@
 /Users/Fengjuan/Projects/WebService/src/main/java/com/DeliFood/WebServiceConfiguration.java
 /Users/Fengjuan/Projects/WebService/src/main/java/com/DeliFood/core/Customer.java
 /Users/Fengjuan/Projects/WebService/src/main/java/com/DeliFood/core/Restaurant.java
-/Users/Fengjuan/Projects/WebService/src/main/java/com/DeliFood/resources/RestaurantPageResource.java
 /Users/Fengjuan/Projects/WebService/src/main/java/com/DeliFood/views/HomePageView.java
 /Users/Fengjuan/Projects/WebService/src/main/java/com/DeliFood/WebServiceApplication.java
 /Users/Fengjuan/Projects/WebService/src/main/java/com/DeliFood/views/MenuPageView.java
 /Users/Fengjuan/Projects/WebService/src/main/java/com/DeliFood/resources/HomePageResource.java
+/Users/Fengjuan/Projects/WebService/src/main/java/com/DeliFood/resources/RestaurantPageResource.java
+/Users/Fengjuan/Projects/WebService/src/main/java/com/DeliFood/core/Menu.java
 /Users/Fengjuan/Projects/WebService/src/main/java/com/DeliFood/api/Saying.java
 /Users/Fengjuan/Projects/WebService/src/main/java/com/DeliFood/resources/MenuPageResource.java
 /Users/Fengjuan/Projects/WebService/src/main/java/com/DeliFood/views/RestaurantPageView.java
