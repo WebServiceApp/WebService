@@ -10,7 +10,7 @@
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.connection.url">jdbc:postgresql://localhost/webdeli</property>
         <property name="hibernate.connection.username">postgres</property>
-        <property name="hibernate.connection.password">123456</property>
+        <property name="hibernate.connection.password">12345</property>
 
         <!-- SQL dialect -->
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
@@ -23,15 +23,8 @@
 
         <!-- Annotated entity classes -->
         <mapping class="com.DeliFood.core.Restaurant"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <mapping class="com.DeliFood.core.Customer"/>
-        <mapping class="com.DeliFood.core.People"/>
-=======
         <mapping class="com.DeliFood.core.Menu"/>
->>>>>>> origin/integrateFrontEnd
-=======
->>>>>>> parent of ee23472... Merge pull request #3 from WebServiceApp/PisethBranch
+
 
 
     </session-factory>
