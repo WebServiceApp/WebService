@@ -59,11 +59,9 @@ public class WebServiceApplication extends Application<WebServiceConfiguration> 
         );
         environment.jersey().register(homePageResource);
         environment.jersey().register(restaurantPageResource);
-<<<<<<< HEAD
         environment.jersey().register(new CheckoutPageResource(template));
-=======
         environment.jersey().register(menuPageResource);
->>>>>>> origin/integrateFrontEnd
+
     }
 
 }
