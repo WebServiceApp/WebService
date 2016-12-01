@@ -1,6 +1,5 @@
 package com.DeliFood;
 
-import com.DeliFood.core.Template;
 import io.dropwizard.Configuration;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.*;
@@ -33,10 +32,6 @@ public class WebServiceConfiguration extends Configuration {
     @JsonProperty
     public void setDefaultName(String name) {
         this.defaultName = name;
-    }
-
-    public Template buildTemplate() {
-        return new Template(template, defaultName);
     }
 
 

@@ -1,7 +1,5 @@
 package com.DeliFood;
 
-import com.DeliFood.core.Template;
-import com.DeliFood.resources.CheckoutPageResource;
 import com.DeliFood.views.HomePageView;
 import io.dropwizard.Application;
 import io.dropwizard.*;
@@ -42,7 +40,6 @@ public class WebServiceApplication extends Application<WebServiceConfiguration> 
     public void run(final WebServiceConfiguration configuration,
                     final Environment environment)
     {
-        final Template template = configuration.buildTemplate();
         final HomePageResource homePageResource = new HomePageResource(
                 configuration.getTemplate(),
                 configuration.getDefaultName()
@@ -59,9 +56,12 @@ public class WebServiceApplication extends Application<WebServiceConfiguration> 
         );
         environment.jersey().register(homePageResource);
         environment.jersey().register(restaurantPageResource);
+<<<<<<< HEAD
         environment.jersey().register(new CheckoutPageResource(template));
         environment.jersey().register(menuPageResource);
 
+=======
+>>>>>>> parent of ee23472... Merge pull request #3 from WebServiceApp/PisethBranch
     }
 
 }
