@@ -24,6 +24,7 @@
         <!-- Annotated entity classes -->
         <mapping class="com.DeliFood.core.Restaurant"/>
         <mapping class="com.DeliFood.core.Menu"/>
+        <mapping class="com.DeliFood.core.Customer"/>
 
 
     </session-factory>
