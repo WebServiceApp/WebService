@@ -1,7 +1,10 @@
 package com.DeliFood.views;
 
-import com.DeliFood.core.Restaurant;
+import com.DeliFood.core.Menu;
 import io.dropwizard.views.View;
+import java.lang.String;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by Fengjuan on 11/18/16.
@@ -9,7 +12,8 @@ import io.dropwizard.views.View;
 public class MenuPageView extends View {
 
 
-    private Restaurant restaurant;
+//    private List<Menu> menus;
+    private HashMap<String, List<Menu>> map;
 
     public enum Template {
         FREEMARKER("freemarker/menuPage.ftl");
@@ -25,14 +29,14 @@ public class MenuPageView extends View {
         }
     }
 
-    public MenuPageView(MenuPageView.Template template, Restaurant restaurant) {
+    public MenuPageView(MenuPageView.Template template, HashMap<String,List<Menu>> map) {
         super(template.getTemplateName());
-        this.restaurant = restaurant;
+        this.map = map;
 
     }
 
-    public Restaurant getRestaurant() {
-        return restaurant;
+    public HashMap<String, List<Menu>> getMenus() {
+        return map;
     }
 
 }

@@ -131,11 +131,19 @@ body {
     display: block;
 }
 
+<<<<<<< HEAD
 .openSign {
     width: 75%;
     height: auto;
     display: block;
 }
+=======
+/*.Sign {*/
+/*width: 55%;*/
+/*height: auto;*/
+/*display: block;*/
+/*}*/
+>>>>>>> origin/integrateFrontEnd
 
 .compantInfo {
     font-family: 'Open Sans';
@@ -148,6 +156,10 @@ body {
     width: 100%;
     display: inline-block;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/integrateFrontEnd
 .col a:link,
 .col a:visited{
     color: white;
@@ -282,7 +294,13 @@ li a:hover {
     display: block;
 }
 
+<<<<<<< HEAD
 .dropdown-content a:hover {background-color: #f1f1f1}
+=======
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+>>>>>>> origin/integrateFrontEnd
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -293,11 +311,39 @@ li a:hover {
 }
 
 .section-menuimage img {
+<<<<<<< HEAD
     width: 200px;
     height: auto;
 }
 .section-menuimage p {
     text-align: center;
+=======
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+/*.section-menuimage p {*/
+/*text-align: center;*/
+/*}*/
+.imageWords {
+    display: block;
+    text-align: center;
+}
+
+.section-menuimage button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+>>>>>>> origin/integrateFrontEnd
 }
 
 .orderInfo {
@@ -307,11 +353,22 @@ li a:hover {
     width: 30%;
     float: right;
 }
+<<<<<<< HEAD
+=======
+/*.orderInfo p {*/
+/*display: block;*/
+/*width: 100%;*/
+/*}*/
+>>>>>>> origin/integrateFrontEnd
 
 .orderInfoword{
     text-align: center;
     /*border-bottom: 1px solid #000000;*/
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/integrateFrontEnd
 .orderSummary {
     margin-left: 15px;
     position: relative;
@@ -342,6 +399,10 @@ li a:hover {
     float: right;
     /*text-align: right;*/
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/integrateFrontEnd
 .totalAmount {
     font-size: 140%;
     font-weight: 600;
@@ -354,6 +415,10 @@ li a:hover {
 .checkbtn {
     text-align: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/integrateFrontEnd
 .checkbtn button {
     background-color: #4CAF50;
     border: none;
@@ -373,6 +438,10 @@ li a:hover {
     width: 60%;
     float: left;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/integrateFrontEnd
 input {
     margin-bottom: 5px;
     /*border-radius: 5%;*/
@@ -381,13 +450,19 @@ input {
 
 .customerinfo {
     margin-bottom: 4%;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/integrateFrontEnd
 }
 
 .scheduleTime {
     margin-bottom: 4%;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/integrateFrontEnd
 }
 
 .paymentMethod img {
@@ -395,9 +470,17 @@ input {
     width: 30%;
     height: auto;
 }
+<<<<<<< HEAD
 .paymentMethod input{
     vertical-align: middle;
 }
+=======
+
+.paymentMethod input{
+    vertical-align: middle;
+}
+
+>>>>>>> origin/integrateFrontEnd
 .coupon button {
     background-color: #e67e22;
     color: white;
@@ -408,4 +491,7 @@ input {
     float: right;
     border-left: 3px solid #c0c0c0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/integrateFrontEnd

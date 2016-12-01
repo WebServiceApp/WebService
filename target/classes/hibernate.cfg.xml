@@ -8,7 +8,7 @@
 
         <!-- Connection settings -->
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost/delifood</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost/webdeli</property>
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">piseth0605</property>
 
@@ -24,8 +24,12 @@
 
         <!-- Annotated entity classes -->
         <mapping class="com.DeliFood.core.Restaurant"/>
+<<<<<<< HEAD
         <mapping class="com.DeliFood.core.Customer"/>
         <mapping class="com.DeliFood.core.People"/>
+=======
+        <mapping class="com.DeliFood.core.Menu"/>
+>>>>>>> origin/integrateFrontEnd
 
 
     </session-factory>
