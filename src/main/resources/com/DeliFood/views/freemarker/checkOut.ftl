@@ -28,7 +28,7 @@
         ng-controller="mainCtrl">
 <div style="margin: 5% 10%;">
 <div class="checkoutpage">
-    <div class="customerinfo">
+    <div class="customerinfo">s
     <h2>Info</h2>
     <div>Name <input type="text"></div>
     <div class="delieryAddress">Delivery Address<br>
@@ -88,7 +88,7 @@
             <img src="assets/css/img/sign/paypal_icon.png" alt="paypal">
         </div>
         <div class="col span-1-of-2 box">
-            <img src="assets/css/img/sign/visa-checkout.png" alt="paypal">
+            <img src="assets/css/img/sign/visa-checkout.png" alt="VisaCheckOut">
         </div>
     </div>
         <div class="row">
