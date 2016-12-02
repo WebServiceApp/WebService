@@ -112,7 +112,7 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
 
-                        <img style="border:6px groove gold;" src="/assets/css/img/restaurantPage/kiZuKi.png"  width="250" height="200" alt="Kizuki" class="RestaurantFrame">
+                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/kiZuKi.png"   alt="Kizuki" class="RestaurantFrame">
                         <span class="stars">3</span>
 
                         <script>
@@ -145,8 +145,8 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
 
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="/assets/css/img/restaurantPage/vivo53.png"
-                             width="250" height="200" alt="vivo53" class="RestaurantFrame">
+                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/vivo53.png"
+                              alt="vivo53" class="RestaurantFrame">
                         <span class="stars">3</span>
 
                         <h5>$$$</h5>
@@ -161,8 +161,8 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="/assets/css/img/restaurantPage/maruri.png"
-                             width="250" height="200" alt="Mayuri" class="RestaurantFrame">
+                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/maruri.png"
+                              alt="Mayuri" class="RestaurantFrame">
                         <span class="stars">3</span>
                         <h5>$$</h5>
                         <br>
@@ -174,8 +174,8 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="/assets/css/img/restaurantPage/burgerKingLogo.jpeg"
-                             width="250" height="200" alt="BurgerKing" class="RestaurantFrame">
+                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/burgerKingLogo.jpeg"
+                              alt="BurgerKing" class="RestaurantFrame">
                         <span class="stars">3</span>
                         <h5>$</h5>
                         <br>
@@ -193,8 +193,8 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
 
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;"
-                             src="/assets/css/img/restaurantPage/famousEzellChicken.png" width="250" height="200"
+                        <img style="border:0px groove gold;"
+                             src="/assets/css/img/restaurantPage/famousEzellChicken.png" 
                              alt="Ezell" class="RestaurantFrame">
                         <span class="stars">3</span>
                         <h5>$</h5>
@@ -209,8 +209,8 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
 
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;"
-                             src="/assets/css/img/restaurantPage/theCheesecakeFactory.png" width="250" height="200"
+                        <img style="border:0px groove gold;"
+                             src="/assets/css/img/restaurantPage/theCheesecakeFactory.png" 
                              alt="CheeseFactory" class="RestaurantFrame">
                         <span class="stars">3</span>
                         <h5>$$</h5>
@@ -224,7 +224,7 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="/assets/css/img/restaurantPage/blueSushi.jpeg" width="250" height="200"
+                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/blueSushi.jpeg" 
                              alt="Mayuri" class="RestaurantFrame">
                         <span class="stars">3</span>
                         <h5>$$</h5>
@@ -237,7 +237,7 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="http://placehold.it/250x200" width="250" height="200"
+                        <img style="border:0px groove gold;" src="http://placehold.it/250x200" 
                              alt="MoonSoon" class="RestaurantFrame">
                         <h5>price tag</h5>
                         <h4>Restaurant Name</h4>
@@ -254,7 +254,7 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
 
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="http://placehold.it/250x200" width="250" height="200"
+                        <img style="border:0px groove gold;" src="http://placehold.it/250x200" 
                              alt="Kizuki" class="RestaurantFrame">
                         <h5>price tag</h5>
                         <h4>Restaurant Name</h4>
@@ -267,7 +267,7 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
 
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="http://placehold.it/250x200" width="250" height="200"
+                        <img style="border:0px groove gold;" src="http://placehold.it/250x200" 
                              alt="vivo53" class="RestaurantFrame">
                         <h5>price tag</h5>
                         <h4>Restaurant Name</h4>
@@ -279,7 +279,7 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:4px groove gold;" src="http://placehold.it/250x200" width="250" height="200"
+                        <img style="border:0px groove gold;" src="http://placehold.it/250x200"
                              alt="Mayuri" class="RestaurantFrame">
                         <h5>price tag</h5>
                         <h4>Restaurant Name</h4>
@@ -290,7 +290,7 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="http://placehold.it/250x200" width="250" height="200"
+                        <img style="border:0px groove gold;" src="http://placehold.it/250x200" 
                              alt="BurgerKing" class="RestaurantFrame">
                         <h5>price tag</h5>
                         <h4>Restaurant Name</h4>
@@ -304,5 +304,27 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
     </section>
 
 </section>
+
+<div class="compantInfo">
+    <div class="row">
+        <div class="col span-1-of-3 box">
+            <h3>Get to Know Us</h3>
+            <a href="#"> About Us </a><br>
+            <a href="#"> Blog </a>
+        </div>
+
+        <div class="col span-1-of-3 box">
+            <h3>Let Us Help You</h3>
+            <a href="#"> Support </a><br>
+            <a href="#"> FAQ </a>
+        </div>
+
+        <div class="col span-1-of-3 box">
+            <h3>Doing Business With Us</h3>
+            <a href="#"> Become a partner Restaurant </a><br>
+            <a href="#"> Become a Carrier </a>
+        </div>
+    </div>
+</div>
 </body>
 </html>

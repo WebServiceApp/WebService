@@ -53,9 +53,9 @@ h3 {
 
 /* restaurant title*/
 h4{
-    font-family: 'Ravi Prakash';
-    font-weight: 200;
-    font-size: 180%;
+    /*font-family: 'Ravi Prakash';*/
+    font-weight: 700;
+    font-size: 130%;
     /*margin-left: 5px;*/
     /*align: left;*/
 }
@@ -129,11 +129,30 @@ body {
 
 .RestaurantFrame {
 
+    /*background-color: snow;*/
+    /*padding-top: 2%;*/
+    /*padding-left: 3%;*/
+    /*padding-right: 3%;*/
+    /*padding-bottom: 2%;*/
+    /*width: 250px;*/
+    /*height: 200px;*/
+    /*margin: 0;*/
+    overflow: hidden;
     background-color: snow;
-    padding-top: 2%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 2%;
+}
+
+.RestaurantFrame img {
+    opacity:1;
+    width: 250px;
+    height: 200px;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    margin-bottom: 9px;
+}
+
+.RestaurantFrame img:hover {
+    opacity: 1;
+    transform: scale(1.03);
 }
 
 /*----------------- star rating ----------------------*/
@@ -147,4 +166,30 @@ span.stars, span.stars span {
 
 span.stars span {
     background-position: 0 0;
+}
+
+.compantInfo {
+    font-family: 'Open Sans';
+    list-style:none;
+    background-color: #222434;
+    color: white;
+    padding-left: 5%;
+    padding-top: 2%;
+
+    width: 100%;
+    display: inline-block;
+}
+
+.col a:link,
+.col a:visited{
+    color: #D3D3D3;
+    text-decoration: none;
+    font-size: 76%;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.col a:hover,
+.col a:active{
+    color: white;
 }
