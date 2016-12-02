@@ -1,5 +1,6 @@
 package com.DeliFood;
 
+import com.DeliFood.resources.MenuPageResource;
 import com.DeliFood.views.HomePageView;
 import io.dropwizard.Application;
 import io.dropwizard.*;
@@ -49,7 +50,7 @@ public class WebServiceApplication extends Application<WebServiceConfiguration> 
                 configuration.getDefaultName()
         );
 
-        final RestaurantPageResource menuPageResource = new RestaurantPageResource(
+        final MenuPageResource menuPageResource = new MenuPageResource(
                 configuration.getTemplate(),
                 configuration.getDefaultName()
         );

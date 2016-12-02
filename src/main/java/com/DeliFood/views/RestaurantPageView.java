@@ -27,7 +27,6 @@ public class RestaurantPageView extends View{
     public RestaurantPageView(RestaurantPageView.Template template, List<Restaurant> restaurants) {
         super(template.getTemplateName());
         this.restaurants = restaurants;
-
     }
 
     public List<Restaurant> getRestaurants() {
