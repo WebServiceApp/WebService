@@ -174,7 +174,7 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/burgerKingLogo.jpeg"
+                        <a href="menu" img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/burgerKingLogo.jpeg"
                               alt="BurgerKing" class="RestaurantFrame">
                         <span class="stars">3</span>
                         <h5>$</h5>

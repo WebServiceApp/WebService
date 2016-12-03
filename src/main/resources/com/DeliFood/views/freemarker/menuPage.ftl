@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/Grid.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendors/css/Grid.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/menuStyle.css">
     <link rel="stylesheet" type="text/javascript" href="/assets/js/app.js">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
@@ -18,7 +18,7 @@
 <header>
     <nav>
         <div class="row">
-            <img src="/assets/css/img/sign/deliLogo.png" alt="DeliFood Logo" class="logo">
+            <img src="assets/css/img/sign/deliLogo.png" alt="DeliFood Logo" class="logo">
             <a class="deliWord">DeliFood </a>
         </div>
     </nav>
@@ -32,7 +32,7 @@
 
     <div class="row">
         <div class="col span-0.5-of-3 box">
-            <img src="/assets/css/img/restaurantPage/burgerKingLogo.png" alt="restaurant Logo"
+            <img src="assets/css/img/restaurantPage/burgerKingLogo.jpeg" alt="restaurant Logo"
                  class="restaurant_Logo">
         </div>
 
@@ -44,7 +44,7 @@
 
 
                 <p class="get_orderTime"> Get order time: 45-50 min</p>
-                <p class="restaurant_address"> 11723 NE 8th St Bellevue, WA 98005</p>
+                <#--<p class="restaurant_address"> ${restaurant[6].address}</p>-->
             </div>
         </div>
 
