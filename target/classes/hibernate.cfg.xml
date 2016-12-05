@@ -10,7 +10,7 @@
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.connection.url">jdbc:postgresql://localhost/webdeli</property>
         <property name="hibernate.connection.username">postgres</property>
-        <property name="hibernate.connection.password">123456</property>
+        <property name="hibernate.connection.password">26821165147</property>
 
         <!-- SQL dialect -->
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
@@ -24,6 +24,7 @@
         <!-- Annotated entity classes -->
         <mapping class="com.DeliFood.core.Restaurant"/>
         <mapping class="com.DeliFood.core.Menu"/>
+        <mapping class="com.DeliFood.core.Customer"/>
 
 
     </session-factory>

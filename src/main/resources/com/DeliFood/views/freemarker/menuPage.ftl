@@ -38,7 +38,7 @@
         <div class="col span-1.5-of-3 box">
             <br>
             <div class="restaurantDetail">
-                <h2>Burger King</h2>
+                <h2> ${menus[1].price}</h2>
                 <p class="delivery_time">Delivery Time: 10:00 AM to 10:00 PM</p>
 
 
