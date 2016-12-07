@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/assets/vendors/css/normalize.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" type="text/css" href="/assets/vendors/css/Grid.css">
-=======
     <link rel="stylesheet" type="text/css" href="/assets/vendors/css/grid.css">
->>>>>>> origin/integrateFrontEnd
     <link rel="stylesheet" type="text/css" href="/assets/css/menuStyle.css">
     <link rel="stylesheet" type="text/javascript" href="/assets/js/app.js">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
@@ -303,15 +299,9 @@
             <br>
 
             <table id="myTable">
-<<<<<<< HEAD
                 <col width="140">
                 <col width="130">
                 <col width="120">
-=======
-                <col width="130">
-                <col width="120">
-                <col width="120">
->>>>>>> origin/integrateFrontEnd
                 <tr hidden>
                     <td>Row1 cell1</td>
                     <td>Row1 cell2</td>
@@ -320,7 +310,6 @@
                 <tr>
                     </table>
 
-<<<<<<< HEAD
             <script>
                 function myCreateFunction() {
                     var table = document.getElementById("myTable");
@@ -363,51 +352,6 @@
                 <#--</div>-->
 
                 <#--<div class="col span-1-of-3 box">-->
-=======
-
-            <script>
-                function myCreateFunction() {
-                    var table = document.getElementById("myTable");
-                    var row = table.insertRow(0);
-                    var cell1 = row.insertCell(0);
-                    var cell2 = row.insertCell(1);
-                    var cell3 = row.insertCell(2);
-                    cell1.innerHTML = "Apple Juice";
-                    cell2.innerHTML = "1";
-                    cell3.innerHTML = "5.29";
-                }
-
-                function myDeleteFunction() {
-                    document.getElementById("myTable").deleteRow(0);
-                }
-            </script>
-            <#--<div class="row">-->
-                <#--<div class="col span-1-of-3 box">-->
-                    <#--<p>Apple Juice</p>-->
-                <#--</div>-->
-
-                <#--<div class="col span-1-of-3 box">-->
-                    <#--<p>{{count}}</p>-->
-                <#--</div>-->
-
-                <#--<div class="col span-1-of-3 box">-->
-                    <#--<p>$ {{price}}</p>-->
-                <#--</div>-->
-            <#--</div>-->
-
-
-
-            <#--<div class="row">-->
-                <#--<div class="col span-1-of-3 box">-->
-                    <#--<p>Burger</p>-->
-                <#--</div>-->
-
-                <#--<div class="col span-1-of-3 box">-->
-                    <#--<p>1</p>-->
-                <#--</div>-->
-
-                <#--<div class="col span-1-of-3 box">-->
->>>>>>> origin/integrateFrontEnd
                     <#--<p>$8.00</p>-->
                 <#--</div>-->
             <#--</div>-->
