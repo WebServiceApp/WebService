@@ -18,7 +18,7 @@
 <header>
     <nav>
         <div class="row">
-            <img src="assets/css/img/sign/deliLogo.png" alt="DeliFood Logo" class="logo">
+            <img src="assets/css/img/sign/deliSign.png" alt="DeliFood Logo" class="logo">
             <a class="deliWord">DeliFood </a>
         </div>
     </nav>
@@ -45,6 +45,7 @@
 
                 <p class="get_orderTime"> Get order time: 45-50 min</p>
                 <p class="restaurant_address"></p>
+
             </div>
         </div>
 
@@ -95,18 +96,18 @@
                     <img src="/assets/css/img/burgerKing/Beverages/Apple_Juice_Beverages.jpg" alt="Apple Juice">
                     <div class="imageWords">
                         <p class="item">Apple Juice</p>
-                        <p class="price">$5.00<br></p>
-                        <button ng-click="myFunc()" class="order">Add to Cart</button>
+                        <p class="price">${menus[1].price}<br></p>
+                        <button onclick="myCreateFunction()"" class="order">Add to Cart</button>
                         </p>
 
                         <script>
                             angular.module('myApp', [])
                                     .controller('myCtrl', ['$scope', function($scope) {
                                         $scope.count = 0;
-                                        $scope.price = 0.00;
+                                        $scope.price = 0;
                                         $scope.myFunc = function() {
                                             $scope.count++;
-                                            $scope.price = $scope.price + 5.00;
+                                            $scope.price = $scope.price + 5.29;
                                         };
                                     }]);
                         </script>
@@ -209,27 +210,69 @@
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/BK_Web_EGGNORMOUS_300x270.jpg">
                     </div>
                     <div class="col span-1-of-4 box">
-                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/BK_Web_EGGNORMOUS_300x270.jpg">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/BreakfastBrownBurrito_Thumbnail_v3.jpg">
                     </div>
                     <div class="col span-1-of-4 box">
-                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/BK_Web_EGGNORMOUS_300x270.jpg">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Croissanwich_Loaded_thumb.png">
                     </div>
                     <div class="col span-1-of-4 box">
-                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/BK_Web_EGGNORMOUS_300x270.jpg">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/SUPREMEBFASTSAND_v2_300x270px.jpg">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col span-1-of-4 box">
-                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/BK_Web_EGGNORMOUS_300x270.jpg">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0001_Croissan27wich_Sausage_egg_Cheese.jpg">
                     </div>
                     <div class="col span-1-of-4 box">
-                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/BK_Web_EGGNORMOUS_300x270.jpg">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0002_Double_Croissan27wich_Sausage_Bacon_Egg_Cheese.jpg">
                     </div>
                     <div class="col span-1-of-4 box">
-                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/BK_Web_EGGNORMOUS_300x270.jpg">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0003_French_Toast_Sticks_0.jpg">
                     </div>
                     <div class="col span-1-of-4 box">
-                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/BK_Web_EGGNORMOUS_300x270.jpg">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0004_Hashbrowns_0.jpg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-4 box">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0006_Smooth_Roast_Coffee_0.jpg">
+                    </div>
+                    <div class="col span-1-of-4 box">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0007_Smooth_Roast_Iced_Coffee_1.jpg">
+                    </div>
+                    <div class="col span-1-of-4 box">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0008_Sausage_Biscuit_0.jpg">
+                    </div>
+                    <div class="col span-1-of-4 box">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0022_Egg_and_Cheese_Croissanwich_0.jpg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-4 box">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0023_Crossan27wich_DoubleSausage_Egg_Cheese_0.jpg">
+                    </div>
+                    <div class="col span-1-of-4 box">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0024_PancakesandSausage_Platter.jpg">
+                    </div>
+                    <div class="col span-1-of-4 box">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0028_Croissa27nwich_Bacon_Egg_Cheese.jpg">
+                    </div>
+                    <div class="col span-1-of-4 box">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0029_Croissan27wichWithHamAndSausage_0.jpg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-4 box">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0031_Biscuit_Sausage_Egg_and_Cheese.jpg">
+                    </div>
+                    <div class="col span-1-of-4 box">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0035_Ultimate_Breakfast_Platter_0.jpg">
+                    </div>
+                    <div class="col span-1-of-4 box">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0037_Croissanwich_Egg_Cheese.jpg">
+                    </div>
+                    <div class="col span-1-of-4 box">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0038_Original_Maple_Flavored_Oatmeal.jpg">
                     </div>
                 </div>
             </div>
@@ -253,58 +296,67 @@
                     <p class="price">Price</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col span-1-of-3 box">
-                    <p>Apple Juice</p>
-                </div>
+            <br>
 
-                <div class="col span-1-of-3 box">
-                    <p>{{count}}</p>
-                </div>
+            <table id="myTable">
+                <col width="130">
+                <col width="120">
+                <col width="120">
+                <tr hidden>
+                    <td>Row1 cell1</td>
+                    <td>Row1 cell2</td>
+                    <td>Row1 cell3</td>
+                </tr>
+                <tr>
+                    </table>
 
-                <div class="col span-1-of-3 box">
-                    <p>$ {{price}}</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3 box">
-                    <p>Burger</p>
-                </div>
 
-                <div class="col span-1-of-3 box">
-                    <p>1</p>
-                </div>
+            <script>
+                function myCreateFunction() {
+                    var table = document.getElementById("myTable");
+                    var row = table.insertRow(0);
+                    var cell1 = row.insertCell(0);
+                    var cell2 = row.insertCell(1);
+                    var cell3 = row.insertCell(2);
+                    cell1.innerHTML = "Apple Juice";
+                    cell2.innerHTML = "1";
+                    cell3.innerHTML = "5.29";
+                }
 
-                <div class="col span-1-of-3 box">
-                    <p>$8.00</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3 box">
-                    <p>Burger</p>
-                </div>
+                function myDeleteFunction() {
+                    document.getElementById("myTable").deleteRow(0);
+                }
+            </script>
+            <#--<div class="row">-->
+                <#--<div class="col span-1-of-3 box">-->
+                    <#--<p>Apple Juice</p>-->
+                <#--</div>-->
 
-                <div class="col span-1-of-3 box">
-                    <p>1</p>
-                </div>
+                <#--<div class="col span-1-of-3 box">-->
+                    <#--<p>{{count}}</p>-->
+                <#--</div>-->
 
-                <div class="col span-1-of-3 box">
-                    <p>$8.00</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3 box">
-                    <p>Burger</p>
-                </div>
+                <#--<div class="col span-1-of-3 box">-->
+                    <#--<p>$ {{price}}</p>-->
+                <#--</div>-->
+            <#--</div>-->
 
-                <div class="col span-1-of-3 box">
-                    <p>1</p>
-                </div>
 
-                <div class="col span-1-of-3 box">
-                    <p>$8.00</p>
-                </div>
-            </div>
+
+            <#--<div class="row">-->
+                <#--<div class="col span-1-of-3 box">-->
+                    <#--<p>Burger</p>-->
+                <#--</div>-->
+
+                <#--<div class="col span-1-of-3 box">-->
+                    <#--<p>1</p>-->
+                <#--</div>-->
+
+                <#--<div class="col span-1-of-3 box">-->
+                    <#--<p>$8.00</p>-->
+                <#--</div>-->
+            <#--</div>-->
+
         </div>
         <div class="orderPriceSummary">
             <div class="row">
