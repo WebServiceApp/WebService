@@ -1,7 +1,16 @@
+<#--Resturant Page
+Create by Miyu, Fuli
+Date: 12/01/2016
+Description: Issue: 1.Reading the rating int still have error. It is the type error
+2. pricelevel need to connect to database
+3. Open now delete, assume all resturant business hours are same
+4. Fix the research input text and filter by-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="/assetsvendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/restaurantStyle.css">
     <link rel="stylesheet" type="text/css" href="/assets/vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="/assets/js/app.js">
@@ -9,6 +18,10 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+
     <meta charset="UTF-8">
     <title>Restaurant</title>
 </head>
@@ -20,7 +33,9 @@
         </div>
     </nav>
 </header>
-<body>
+<body
+        ng-app="myApp"
+        ng-controller="myCtrl">
 <script>
     function myFunction() {
         var input, filter, table, tr, td, i;
@@ -97,38 +112,46 @@
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
 
-                        <img style="border:6px groove gold;" src="/assets/css/img/restaurantPage/kiZuKi.png" width=100%
-                             height=auto alt="Kizuki" class="RestaurantFrame">
-                        <div><span class="stars-container stars-0">★★★★★</span></div>
-                        <div><span class="stars-container stars-10">★★★★★</span></div>
+                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/kiZuKi.png"   alt="Kizuki" class="RestaurantFrame">
+                        <span class="stars">3</span>
+
                         <script>
+                            $(function () {
+                                $('span.stars').stars();
+                            });
+                            $.fn.stars = function () {
+                                return $(this).each(function () {
+                                    $(this).html($('<span />').width(Math.max(0, (Math.min(5, parseFloat($(this).html())))) * 16));
+                                });
+                            }
                         </script>
                         <h5>$$</h5>
+                    <#--<script>-->
+                    <#--angular.module('myApp', [])-->
+                    <#--.controller('myCtrl', ['$scope', function($scope) {-->
+                    <#--$scope.count = 0;-->
+                    <#--$scope.price = 0.00;-->
+                    <#--$scope.mPriceLevel= function() {-->
+                    <#--if()-->
+                    <#--};-->
+                    <#--}]);-->
+                    <#--</script>-->
+
                         <br>
-                        <h4>${restaurants[2].name}</h4>
+                        <h4>${restaurants[3].name}</h4>
                         <h6>Japanese, Ramen</h6>
                     </div>
                 </div>
 
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="/assets/css/img/restaurantPage/vivo53.png"
-                             width="250" height="200" alt="vivo53" class="RestaurantFrame">
-                        <!--<fieldset class="rating">-->
-                        <!--<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>-->
-                        <!--<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>-->
-                        <!--<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>-->
-                        <!--<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>-->
-                        <!--<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>-->
-                        <!--<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>-->
-                        <!--<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>-->
-                        <!--<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>-->
-                        <!--<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>-->
-                        <!--<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>-->
-                        <!--</fieldset>-->
+                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/vivo53.png"
+                             alt="vivo53" class="RestaurantFrame">
+                        <span class="stars">3</span>
+
                         <h5>$$$</h5>
                         <br>
-                        <h4>${restaurants[4].name}</h4>
+                        <h4>${restaurants[5].name}</h4>
                         <div align="right">
                             Pizza, Italian
                         </div>
@@ -138,23 +161,12 @@
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="/assets/css/img/restaurantPage/maruri.png"
-                             width="250" height="200" alt="Mayuri" class="RestaurantFrame">
-                        <!--<fieldset class="rating">-->
-                        <!--<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>-->
-                        <!--<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>-->
-                        <!--<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>-->
-                        <!--<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>-->
-                        <!--<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>-->
-                        <!--<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>-->
-                        <!--<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>-->
-                        <!--<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>-->
-                        <!--<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>-->
-                        <!--<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>-->
-                        <!--</fieldset>-->
+                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/maruri.png"
+                             alt="Mayuri" class="RestaurantFrame">
+                        <span class="stars">3</span>
                         <h5>$$</h5>
                         <br>
-                        <h4>${restaurants[3].name}</h4>
+                        <h4>${restaurants[4].name}</h4>
                         <div align="right">
                             Indian
                         </div>
@@ -162,26 +174,15 @@
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="/assets/css/img/restaurantPage/burgerKingLogo.jpeg"
-                             width="250" height="200" alt="BurgerKing" class="RestaurantFrame">
-                        <!--<fieldset class="rating">-->
-                        <!--<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>-->
-                        <!--<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>-->
-                        <!--<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>-->
-                        <!--<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>-->
-                        <!--<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>-->
-                        <!--<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>-->
-                        <!--<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>-->
-                        <!--<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>-->
-                        <!--<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>-->
-                        <!--<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>-->
-                        <!--</fieldset>-->
-                        <h5>$</h5>
-                        <br>
-                        <h4>${restaurants[0].name}</h4>
-                        <div align="right">
-                            Fast Food, Burger
-                        </div>
+                        <a href="menu"><img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/burgerKingLogo.jpeg"
+                                            alt="BurgerKing" class="RestaurantFrame">
+                            <span class="stars">3</span>
+                            <h5>$</h5>
+                            <br>
+                            <h4>${restaurants[6].name}</h4>
+                            <div align="right">
+                                Fast Food, Burger
+                            </div>
                     </div>
                 </div>
             </div>
@@ -192,24 +193,13 @@
 
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;"
-                             src="/assets/css/img/restaurantPage/famousEzellChicken.png" width="250" height="200"
+                        <img style="border:0px groove gold;"
+                             src="/assets/css/img/restaurantPage/famousEzellChicken.png"
                              alt="Ezell" class="RestaurantFrame">
-                        <!--<fieldset class="rating">-->
-                        <!--<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>-->
-                        <!--<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>-->
-                        <!--<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>-->
-                        <!--<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>-->
-                        <!--<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>-->
-                        <!--<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>-->
-                        <!--<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>-->
-                        <!--<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>-->
-                        <!--<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>-->
-                        <!--<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>-->
-                        <!--</fieldset>-->
+                        <span class="stars">3</span>
                         <h5>$</h5>
                         <br>
-                        <h4>Ezell's</h4>
+                        <h4>${restaurants[1].name}</h4>
                         <div align="right">
                             Fast Food, Burger
                         </div>
@@ -219,24 +209,13 @@
 
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;"
-                             src="/assets/css/img/restaurantPage/theCheesecakeFactory.png" width="250" height="200"
+                        <img style="border:0px groove gold;"
+                             src="/assets/css/img/restaurantPage/theCheesecakeFactory.png"
                              alt="CheeseFactory" class="RestaurantFrame">
-                        <!--<fieldset class="rating">-->
-                        <!--<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>-->
-                        <!--<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>-->
-                        <!--<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>-->
-                        <!--<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>-->
-                        <!--<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>-->
-                        <!--<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>-->
-                        <!--<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>-->
-                        <!--<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>-->
-                        <!--<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>-->
-                        <!--<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>-->
-                        <!--</fieldset>-->
+                        <span class="stars">3</span>
                         <h5>$$</h5>
                         <br>
-                        <h4>The Cheesecake Factory</h4>
+                        <h4>${restaurants[2].name}</h4>
                         <div align="right">
                             American
                         </div>
@@ -245,23 +224,12 @@
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="/assets/css/img/restaurantPage/blueSushi.jpeg" width="250" height="200"
+                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/blueSushi.jpeg"
                              alt="Mayuri" class="RestaurantFrame">
-                        <!--<fieldset class="rating">-->
-                        <!--<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>-->
-                        <!--<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>-->
-                        <!--<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>-->
-                        <!--<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>-->
-                        <!--<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>-->
-                        <!--<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>-->
-                        <!--<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>-->
-                        <!--<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>-->
-                        <!--<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>-->
-                        <!--<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>-->
-                        <!--</fieldset>-->
-                        <h5>price tag</h5>
+                        <span class="stars">3</span>
+                        <h5>$$</h5>
                         <br>
-                        <h4>${restaurants[1].name}</h4>
+                        <h4>${restaurants[0].name}</h4>
                         <div align="right">
                             category
                         </div>
@@ -269,21 +237,8 @@
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="http://placehold.it/250x200" width="250" height="200"
+                        <img style="border:0px groove gold;" src="http://placehold.it/250x200"
                              alt="MoonSoon" class="RestaurantFrame">
-                        <!--<fieldset class="rating">-->
-                        <!--<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>-->
-                        <!--<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>-->
-                        <!--<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>-->
-                        <!--<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>-->
-                        <!--<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>-->
-                        <!--<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>-->
-                        <!--<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>-->
-                        <!--<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>-->
-                        <!--<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>-->
-                        <!--<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>-->
-                        <!--</fieldset>-->
-
                         <h5>price tag</h5>
                         <h4>Restaurant Name</h4>
                         <div align="right">
@@ -299,20 +254,8 @@
 
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="http://placehold.it/250x200" width="250" height="200"
+                        <img style="border:0px groove gold;" src="http://placehold.it/250x200"
                              alt="Kizuki" class="RestaurantFrame">
-                        <!--<fieldset class="rating">-->
-                        <!--<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>-->
-                        <!--<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>-->
-                        <!--<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>-->
-                        <!--<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>-->
-                        <!--<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>-->
-                        <!--<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>-->
-                        <!--<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>-->
-                        <!--<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>-->
-                        <!--<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>-->
-                        <!--<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>-->
-                        <!--</fieldset>-->
                         <h5>price tag</h5>
                         <h4>Restaurant Name</h4>
                         <div align="right">
@@ -324,7 +267,7 @@
 
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="http://placehold.it/250x200" width="250" height="200"
+                        <img style="border:0px groove gold;" src="http://placehold.it/250x200"
                              alt="vivo53" class="RestaurantFrame">
                         <h5>price tag</h5>
                         <h4>Restaurant Name</h4>
@@ -336,20 +279,8 @@
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:4px groove gold;" src="http://placehold.it/250x200" width="250" height="200"
+                        <img style="border:0px groove gold;" src="http://placehold.it/250x200"
                              alt="Mayuri" class="RestaurantFrame">
-                        <!--<fieldset class="rating">-->
-                        <!--<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>-->
-                        <!--<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>-->
-                        <!--<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>-->
-                        <!--<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>-->
-                        <!--<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>-->
-                        <!--<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>-->
-                        <!--<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>-->
-                        <!--<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>-->
-                        <!--<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>-->
-                        <!--<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>-->
-                        <!--</fieldset>-->
                         <h5>price tag</h5>
                         <h4>Restaurant Name</h4>
                         <div align="right">
@@ -359,20 +290,8 @@
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:6px groove gold;" src="http://placehold.it/250x200" width="250" height="200"
+                        <img style="border:0px groove gold;" src="http://placehold.it/250x200"
                              alt="BurgerKing" class="RestaurantFrame">
-                        <!--<fieldset class="rating">-->
-                        <!--<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>-->
-                        <!--<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>-->
-                        <!--<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>-->
-                        <!--<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>-->
-                        <!--<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>-->
-                        <!--<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>-->
-                        <!--<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>-->
-                        <!--<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>-->
-                        <!--<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>-->
-                        <!--<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>-->
-                        <!--</fieldset>-->
                         <h5>price tag</h5>
                         <h4>Restaurant Name</h4>
                         <div align="right">
@@ -385,5 +304,27 @@
     </section>
 
 </section>
+
+<div class="compantInfo">
+    <div class="row">
+        <div class="col span-1-of-3 box">
+            <h3>Get to Know Us</h3>
+            <a href="#"> About Us </a><br>
+            <a href="#"> Blog </a>
+        </div>
+
+        <div class="col span-1-of-3 box">
+            <h3>Let Us Help You</h3>
+            <a href="#"> Support </a><br>
+            <a href="#"> FAQ </a>
+        </div>
+
+        <div class="col span-1-of-3 box">
+            <h3>Doing Business With Us</h3>
+            <a href="#"> Become a partner Restaurant </a><br>
+            <a href="#"> Become a Carrier </a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
