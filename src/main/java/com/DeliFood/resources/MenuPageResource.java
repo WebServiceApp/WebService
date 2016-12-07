@@ -1,6 +1,6 @@
 package com.DeliFood.resources;
 import java.util.ArrayList;
-import java.util.HashMap;
+//import java.util.HashMap;
 import java.util.List;
 import com.DeliFood.core.Menu;
 import com.DeliFood.views.MenuPageView;
@@ -43,8 +43,19 @@ public class MenuPageResource {
     public MenuPageView getMenuViewFreemarker(@QueryParam("rid") Long rid)
     {
         List<Menu> items= getMenu(rid);
-        HashMap<String, List<Menu>> map = new HashMap<String, List<Menu>>();
-        int i = 0;
+        List<Menu> menus = new ArrayList<Menu>();
+        for (int i =0; i < items.size(); i++){
+            menus.add(i, items.get(i));
+        }
+        //HashMap<String, List<Menu>> map = new HashMap<String, List<Menu>>();
+        //List<Menu> menuList = new ArrayList<Menu>();
+        //List<String> menus = new ArrayList<Menu>();
+        /*for (int i = 0; i < items.size(); i++){
+            int a = items.get(i).getMenu_id();
+            menuList.add(a, items.get(i));
+
+        }*/
+        /*int i = 0;
         while(i < items.size())
         {
             if(map.containsKey(items.get(i).getCategory()))
@@ -57,7 +68,7 @@ public class MenuPageResource {
                 map.put(items.get(i).getCategory(),res);
             }
             i++;
-        }
+        }*/
 //        int index = 0;
 //        for(String key : map.keySet())
 //        {
@@ -70,7 +81,7 @@ public class MenuPageResource {
 //            }
 //        }
 
-        return new MenuPageView(MenuPageView.Template.FREEMARKER, map);
+        return new MenuPageView(MenuPageView.Template.FREEMARKER, menus);
     }
 
     private List<Menu> getMenu(Long rid)
@@ -80,19 +91,19 @@ public class MenuPageResource {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
 
-        List<Menu> items = session.createCriteria(Menu.class)
+        List<Menu> menus = session.createCriteria(Menu.class)
                 .add(Restrictions.eq("restaurant_id", rid))
                 .list();
 
 
-        for (Menu item : items) {
-            System.out.println("We have got menu: " + item.getMenuItem() + " " + item.getCategory());
+        for (Menu menu : menus) {
+            System.out.println("We have got menu: " + menu.getMenuItem() + " " + menu.getCategory());
 
         }
 
         session.getTransaction().commit();
         session.close();
-        return items;
+        return menus;
     }
 
 //    @GET

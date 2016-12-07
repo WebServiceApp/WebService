@@ -1,17 +1,21 @@
 package com.DeliFood.views;
 
 import com.DeliFood.core.Menu;
+import com.DeliFood.core.Restaurant;
 import io.dropwizard.views.View;
 import java.lang.String;
-import java.util.HashMap;
+//import java.util.HashMap;
 import java.util.List;
+
 /**
  * Created by Fengjuan on 11/18/16.
  */
 public class MenuPageView extends View {
 
-    private HashMap<String, List<Menu>> map;
 
+    //    private List<Menu> menus;
+    //private HashMap<String, List<Menu>> map;
+    private List<Menu> menus;
     public enum Template {
         FREEMARKER("freemarker/menuPage.ftl");
 
@@ -26,14 +30,17 @@ public class MenuPageView extends View {
         }
     }
 
-    public MenuPageView(MenuPageView.Template template,HashMap<String, List<Menu>> map ) {
+    public MenuPageView(MenuPageView.Template template, List<Menu> menus){//HashMap<String,List<Menu>> map) {
         super(template.getTemplateName());
-        this.map = map;
+        this.menus = menus;
 
     }
 
-    public HashMap<String, List<Menu>> getMenus() {
-        return map;
+
+
+    //public HashMap<String, List<Menu>> getMenus() {
+    public List<Menu> getMenus() {
+        return menus;
     }
 
 }

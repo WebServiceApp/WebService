@@ -44,7 +44,7 @@
 
 
                 <p class="get_orderTime"> Get order time: 45-50 min</p>
-                <#--<p class="restaurant_address"> ${restaurant[6].address}</p>-->
+                <p class="restaurant_address"> address</p>
             </div>
         </div>
 
@@ -114,7 +114,7 @@
                     </div>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <img src="/assets/css/img/burgerKing/Beverages/Apple_Juice_Beverages.jpg">
+                    <img src="/assets/css/img/burgerKing/Beverages/Cherry_ICEE__Beverages.jpg">
                     <div class="imageWords">
                         <p class="item">Apple Juice</p>
                         <p class="price">$5.00<br></p>
@@ -132,23 +132,46 @@
                     </div>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <img src="/assets/css/img/burgerKing/Beverages/Apple_Juice_Beverages.jpg">
+                    <img src="/assets/css/img/burgerKing/Beverages/Chocolate_Milk_Beverages.jpg">
                 </div>
             </div>
             <div class="row">
                 <div class="col span-1-of-4 box">
-                    <img src="/assets/css/img/burgerKing/Beverages/Apple_Juice_Beverages.jpg">
+                    <img src="/assets/css/img/burgerKing/Beverages/Coca_Cola_Beverages.jpg">
                 </div>
                 <div class="col span-1-of-4 box">
-                    <img src="/assets/css/img/burgerKing/Beverages/Apple_Juice_Beverages.jpg">
+                    <img src="/assets/css/img/burgerKing/Beverages/Coke_Beverages.jpg">
                 </div>
                 <div class="col span-1-of-4 box">
-                    <img src="/assets/css/img/burgerKing/Beverages/Apple_Juice_Beverages.jpg">
+                    <img src="/assets/css/img/burgerKing/Beverages/Diet_Coke_Beverages.jpg">
                 </div>
                 <div class="col span-1-of-4 box">
-                    <img src="/assets/css/img/burgerKing/Beverages/Apple_Juice_Beverages.jpg">
+                    <img src="/assets/css/img/burgerKing/Beverages/Dr_Pepper_Beverages.jpg">
                 </div>
             </div>
+            <div class="row">
+                <div class="col span-1-of-4 box">
+                    <img src="/assets/css/img/burgerKing/Beverages/Mello_Yello_Beverages.jpg">
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="/assets/css/img/burgerKing/Beverages/Milk_Beverages.jpg">
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="/assets/css/img/burgerKing/Beverages/Minute_Maid_Lemonade__Beverages.jpg">
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="/assets/css/img/burgerKing/Beverages/Nestle_PureLife_Water_Beverages.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4 box">
+                    <img src="/assets/css/img/burgerKing/Beverages/Orange_Juice_Beverages.jpg">
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="/assets/css/img/burgerKing/Beverages/Sprite_Beverages.jpg">
+
+            </div>
+
         </div>
         <div id="burger">
             <div class="row">
