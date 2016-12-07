@@ -310,7 +310,6 @@
                 <tr>
                     </table>
 
-
             <script>
                 function myCreateFunction() {
                     var table = document.getElementById("myTable");
