@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/assets/vendors/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/assets/vendors/css/Grid.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/menuStyle.css">
     <link rel="stylesheet" type="text/javascript" href="/assets/js/app.js">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">

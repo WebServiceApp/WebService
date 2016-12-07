@@ -19,9 +19,6 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
     <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-
-
     <meta charset="UTF-8">
     <title>Restaurant</title>
 </head>
@@ -138,7 +135,7 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
                     <#--</script>-->
 
                         <br>
-                        <h4>${restaurants[3].name}</h4>
+                        <h4>${restaurants[4].name}</h4>
                         <h6>Japanese, Ramen</h6>
                     </div>
                 </div>
@@ -151,7 +148,7 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
 
                         <h5>$$$</h5>
                         <br>
-                        <h4>${restaurants[5].name}</h4>
+                        <h4>${restaurants[6].name}</h4>
                         <div align="right">
                             Pizza, Italian
                         </div>
@@ -166,7 +163,8 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
                         <span class="stars">3</span>
                         <h5>$$</h5>
                         <br>
-                        <h4>${restaurants[4].name}</h4>
+
+                        <h4>${restaurants[5].name}</h4>
                         <div align="right">
                             Indian
                         </div>
@@ -180,10 +178,11 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
                             <span class="stars">3</span>
                             <h5>$</h5>
                             <br>
-                            <h4>${restaurants[6].name}</h4>
+                            <h4>${restaurants[1].name}</h4>
                             <div align="right">
                                 Fast Food, Burger
                             </div>
+
                     </div>
                 </div>
             </div>
@@ -200,7 +199,7 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
                         <span class="stars">3</span>
                         <h5>$</h5>
                         <br>
-                        <h4>${restaurants[1].name}</h4>
+                        <h4>${restaurants[3].name}</h4>
                         <div align="right">
                             Fast Food, Burger
                         </div>
