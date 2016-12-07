@@ -182,14 +182,26 @@ span.stars span {
 
 .col a:link,
 .col a:visited{
+<<<<<<< HEAD
     color: #D3D3D3;
     text-decoration: none;
     font-size: 76%;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.2s;
+=======
+color: #D3D3D3;
+text-decoration: none;
+font-size: 76%;
+border-bottom: 1px solid transparent;
+transition: border-bottom 0.2s;
+>>>>>>> 1818f5625d17eb2610061622ad169523262defda
 }
 
 .col a:hover,
 .col a:active{
+<<<<<<< HEAD
     color: white;
+=======
+color: white;
+>>>>>>> 1818f5625d17eb2610061622ad169523262defda
 }

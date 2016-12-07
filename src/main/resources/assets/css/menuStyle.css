@@ -151,7 +151,7 @@ body {
 
 .col a:link,
 .col a:visited{
-    color: white;
+    color: #D3D3D3;
     text-decoration: none;
     font-size: 76%;
     border-bottom: 1px solid transparent;
@@ -160,7 +160,7 @@ body {
 
 .col a:hover,
 .col a:active{
-    border-bottom: 2px solid #e67e22;
+    color: white;
 }
 
 .main-input-box {
@@ -219,14 +219,17 @@ body {
     width: 70%;
     float: left;
 }
+
 .section-MenuCategoriesList {
     position: relative;
 
 }
+
 .restaurantDetail{
     overflow: hidden;
     display: block;
 }
+
 ul {
     list-style-type: none;
     margin: 0;

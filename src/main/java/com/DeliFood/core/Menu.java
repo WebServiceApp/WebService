@@ -16,7 +16,7 @@ public class Menu implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long menu_id;
+    private int menu_id;
 
     private Long restaurant_id;
     private String menu_item;
@@ -30,7 +30,7 @@ public class Menu implements Serializable {
 
     };
 
-    public Menu(Long menu_id, String menu_item, Float price) {
+    public Menu(int menu_id, String menu_item, Float price) {
         this.menu_id =
                 menu_id;
         this.menu_item = menu_item;
@@ -38,8 +38,8 @@ public class Menu implements Serializable {
     };
 
 
-    public Long getMenu_id() {return menu_id;}
-    public void setMenu_id(Long menu_id) {
+    public int getMenu_id() {return menu_id;}
+    public void setMenu_id(int menu_id) {
         this.menu_id = menu_id;
     }
 

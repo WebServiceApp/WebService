@@ -1,7 +1,16 @@
+<#--Resturant Page
+Create by Miyu, Fuli
+Date: 12/01/2016
+Description: Issue: 1.Reading the rating int still have error. It is the type error
+2. pricelevel need to connect to database
+3. Open now delete, assume all resturant business hours are same
+4. Fix the research input text and filter by-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="/assetsvendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/restaurantStyle.css">
     <link rel="stylesheet" type="text/css" href="/assets/vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="/assets/js/app.js">
@@ -154,6 +163,7 @@
                         <span class="stars">3</span>
                         <h5>$$</h5>
                         <br>
+
                         <h4>${restaurants[5].name}</h4>
                         <div align="right">
                             Indian
@@ -162,15 +172,17 @@
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
+                        <a href="menu">
                         <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/burgerKingLogo.jpeg"
-                             alt="BurgerKing" class="RestaurantFrame">
-                        <span class="stars">3</span>
-                        <h5>$</h5>
-                        <br>
-                        <h4>${restaurants[1].name}</h4>
-                        <div align="right">
-                            Fast Food, Burger
-                        </div>
+                                            alt="BurgerKing" class="RestaurantFrame"></a>
+                            <span class="stars">3</span>
+                            <h5>$</h5>
+                            <br>
+                            <h4>${restaurants[1].name}</h4>
+                            <div align="right">
+                                Fast Food, Burger
+                            </div>
+
                     </div>
                 </div>
             </div>
