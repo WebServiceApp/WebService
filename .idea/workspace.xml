@@ -1,90 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="faf891f5-44bc-4771-aeac-57c3262c5245" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/checkoutPage.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/orderStatePage.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/WebService-1.0-SNAPSHOT-javadoc.jar" afterPath="$PROJECT_DIR$/target/WebService-1.0-SNAPSHOT-javadoc.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/WebService-1.0-SNAPSHOT-sources.jar" afterPath="$PROJECT_DIR$/target/WebService-1.0-SNAPSHOT-sources.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/WebService-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/WebService-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/DeliFood/WebServiceApplication.class" afterPath="$PROJECT_DIR$/target/classes/com/DeliFood/WebServiceApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/DeliFood/core/Customer.class" afterPath="$PROJECT_DIR$/target/classes/com/DeliFood/core/Customer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/original-WebService-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/original-WebService-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/DeliFood/WebServiceApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/DeliFood/WebServiceApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/DeliFood/core/Customer.java" afterPath="$PROJECT_DIR$/src/main/java/com/DeliFood/core/Customer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/css/restaurantStyle.css" afterPath="$PROJECT_DIR$/src/main/resources/assets/css/restaurantStyle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/menuPage.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/menuPage.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/restaurantPage.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/restaurantPage.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/allclasses-frame.html" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/allclasses-noframe.html" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-noframe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/WebServiceApplication.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/WebServiceApplication.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/WebServiceConfiguration.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/WebServiceConfiguration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/api/Saying.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/api/Saying.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/api/class-use/Saying.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/api/class-use/Saying.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/api/package-frame.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/api/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/api/package-summary.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/api/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/api/package-tree.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/api/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/api/package-use.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/api/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/class-use/WebServiceApplication.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/class-use/WebServiceApplication.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/class-use/WebServiceConfiguration.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/class-use/WebServiceConfiguration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/Customer.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/Customer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/Menu.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/Menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/People.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/People.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/Restaurant.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/Restaurant.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/class-use/Customer.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/class-use/Customer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/class-use/Menu.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/class-use/Menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/class-use/People.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/class-use/People.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/class-use/Restaurant.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/class-use/Restaurant.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/package-frame.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/package-summary.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/package-tree.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/package-use.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/core/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/package-frame.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/package-summary.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/package-tree.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/package-use.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/HomePageResource.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/HomePageResource.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/MenuPageResource.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/MenuPageResource.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/RestaurantPageResource.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/RestaurantPageResource.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/class-use/HomePageResource.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/class-use/HomePageResource.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/class-use/MenuPageResource.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/class-use/MenuPageResource.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/class-use/RestaurantPageResource.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/class-use/RestaurantPageResource.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/package-frame.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/package-summary.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/package-tree.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/package-use.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/resources/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/HomePageView.Template.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/HomePageView.Template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/HomePageView.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/HomePageView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/MenuPageView.Template.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/MenuPageView.Template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/MenuPageView.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/MenuPageView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/RestaurantPageView.Template.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/RestaurantPageView.Template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/RestaurantPageView.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/RestaurantPageView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/class-use/HomePageView.Template.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/class-use/HomePageView.Template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/class-use/HomePageView.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/class-use/HomePageView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/class-use/MenuPageView.Template.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/class-use/MenuPageView.Template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/class-use/MenuPageView.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/class-use/MenuPageView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/class-use/RestaurantPageView.Template.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/class-use/RestaurantPageView.Template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/class-use/RestaurantPageView.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/class-use/RestaurantPageView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/package-frame.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/package-summary.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/package-tree.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/package-use.html" afterPath="$PROJECT_DIR$/target/apidocs/com/DeliFood/views/package-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/constant-values.html" afterPath="$PROJECT_DIR$/target/apidocs/constant-values.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/deprecated-list.html" afterPath="$PROJECT_DIR$/target/apidocs/deprecated-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/help-doc.html" afterPath="$PROJECT_DIR$/target/apidocs/help-doc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/index-all.html" afterPath="$PROJECT_DIR$/target/apidocs/index-all.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/index.html" afterPath="$PROJECT_DIR$/target/apidocs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/overview-frame.html" afterPath="$PROJECT_DIR$/target/apidocs/overview-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/overview-summary.html" afterPath="$PROJECT_DIR$/target/apidocs/overview-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/overview-tree.html" afterPath="$PROJECT_DIR$/target/apidocs/overview-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/apidocs/serialized-form.html" afterPath="$PROJECT_DIR$/target/apidocs/serialized-form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/css/restaurantStyle.css" afterPath="$PROJECT_DIR$/target/classes/assets/css/restaurantStyle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/DeliFood/views/freemarker/menuPage.ftl" afterPath="$PROJECT_DIR$/target/classes/com/DeliFood/views/freemarker/menuPage.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/DeliFood/views/freemarker/restaurantPage.ftl" afterPath="$PROJECT_DIR$/target/classes/com/DeliFood/views/freemarker/restaurantPage.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-    </list>
+    <list default="true" id="faf891f5-44bc-4771-aeac-57c3262c5245" name="Default" comment="" />
     <ignored path="WebService.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1183,16 +1100,16 @@
       <workItem from="1480363366411" duration="36528000" />
       <workItem from="1480722704452" duration="2172000" />
       <workItem from="1480966928774" duration="3289000" />
-      <workItem from="1481139566796" duration="272000" />
+      <workItem from="1481139566796" duration="335000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101493000" />
+    <option name="totallyTimeSpent" value="101556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1205,7 +1122,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3602585" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3602585" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
