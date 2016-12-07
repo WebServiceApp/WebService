@@ -299,8 +299,8 @@
             <br>
 
             <table id="myTable">
+                <col width="140">
                 <col width="130">
-                <col width="120">
                 <col width="120">
                 <tr hidden>
                     <td>Row1 cell1</td>
@@ -309,7 +309,6 @@
                 </tr>
                 <tr>
                     </table>
-
 
             <script>
                 function myCreateFunction() {
