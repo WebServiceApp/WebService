@@ -217,7 +217,8 @@
 
             <div class="row">
                 <div class="col span-1-of-2 box">
-                    <p class="totalAmount">Total: </p>
+                    <p class="totalAmount">Total: document.getElementById("write").innerHTML = window.location.search; </p>
+
                 </div>
 
                 <div class="col span-1-of-2 box">

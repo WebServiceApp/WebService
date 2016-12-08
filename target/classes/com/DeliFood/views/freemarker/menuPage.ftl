@@ -95,23 +95,27 @@
                 <div class="col span-1-of-4 box">
                     <img src="/assets/css/img/burgerKing/Beverages/Apple_Juice_Beverages.jpg" alt="Apple Juice">
                     <div class="imageWords">
+
                         <p class="item">Apple Juice</p>
-                        <p class="price">${menus[1].price}</p>
+                        <p class="price">$ ${menus[1].price}</p>
                         <button ng-click="myFunc()" class="order">Add to Cart</button>
                         </p>
 
                         <script>
                             angular.module('myApp', [])
                                     .controller('myCtrl', ['$scope', function($scope) {
+
                                         $scope.count = 0;
                                         $scope.price = 0;
+                                        $scope.subtotal = 0;
                                         $scope.tax = 0;
                                         $scope.total = 0;
                                         $scope.myFunc = function() {
                                             $scope.count++;
                                             $scope.price = $scope.price + ${menus[1].price};
-                                            $scope.tax = $scope.price * 0.095
-                                            $scope.total = $scope.price + $scope.price;
+                                            $scope.subtotal = $scope.price
+                                            $scope.tax = $scope.subtotal * 0.095
+                                            $scope.total = $scope.subtotal + $scope.tax;
                                         };
                                     }]);
                         </script>
@@ -121,10 +125,9 @@
                 <div class="col span-1-of-4 box">
                     <img src="/assets/css/img/burgerKing/Beverages/Cherry_ICEE__Beverages.jpg">
                     <div class="imageWords">
-                        <p class="item">Apple Juice</p>
-                        <p class="price">$5.00<br></p>
+                        <p class="item">Cherry Ice</p>
+                        <p class="price">$ ${menus[2].price}<br></p>
                         <button class="order">Add to Cart</button>
-
                     </div>
                 </div>
                 <div class="col span-1-of-4 box">
@@ -330,6 +333,7 @@
                     <#--document.getElementById("myTable").deleteRow(0);-->
                 <#--}-->
             <#--</script>-->
+
             <div class="row">
                 <div class="col span-1-of-3 box">
                     <p>Apple Juice</p>
@@ -343,6 +347,7 @@
                     <p>$ {{price | number:2}}</p>
                 </div>
             </div>
+
 
 
 
@@ -388,7 +393,9 @@
                 </div>
 
                 <div class="col span-1-of-2 box">
+                    <form action="checkout" method="get">
                     <p class="totalPrice">$ {{total | number:2}}</p>
+                        </form>
                 </div>
             </div>
         </div>
