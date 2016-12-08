@@ -415,17 +415,27 @@ input {
 
 .customerinfo {
     margin-bottom: 4%;
+    /*float: left;*/
 }
-
+/*.googleMap {*/
+    /*float: right;*/
+/*}*/
 .scheduleTime {
     margin-bottom: 4%;
 }
 
-.paymentMethod img {
+.paymentMethod img{
     display: block;
     width: 30%;
     height: auto;
 }
+
+.paypalimage {
+    display: block;
+    width: 30%;
+    height: auto;
+}
+
 
 .paymentMethod input{
     vertical-align: middle;

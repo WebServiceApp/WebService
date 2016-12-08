@@ -96,8 +96,8 @@
                     <img src="/assets/css/img/burgerKing/Beverages/Apple_Juice_Beverages.jpg" alt="Apple Juice">
                     <div class="imageWords">
                         <p class="item">Apple Juice</p>
-                        <p class="price">${menus[1].price}<br></p>
-                        <button onclick="myCreateFunction()"" class="order">Add to Cart</button>
+                        <p class="price">${menus[1].price}</p>
+                        <button ng-click="myFunc()" class="order">Add to Cart</button>
                         </p>
 
                         <script>
@@ -105,9 +105,13 @@
                                     .controller('myCtrl', ['$scope', function($scope) {
                                         $scope.count = 0;
                                         $scope.price = 0;
+                                        $scope.tax = 0;
+                                        $scope.total = 0;
                                         $scope.myFunc = function() {
                                             $scope.count++;
-                                            $scope.price = $scope.price + 5.29;
+                                            $scope.price = $scope.price + ${menus[1].price};
+                                            $scope.tax = $scope.price * 0.095
+                                            $scope.total = $scope.price + $scope.price;
                                         };
                                     }]);
                         </script>
@@ -298,47 +302,47 @@
             </div>
             <br>
 
-            <table id="myTable">
-                <col width="140">
-                <col width="130">
-                <col width="120">
-                <tr hidden>
-                    <td>Row1 cell1</td>
-                    <td>Row1 cell2</td>
-                    <td>Row1 cell3</td>
-                </tr>
-                <tr>
-                    </table>
+            <#--<table id="myTable">-->
+                <#--<col width="140">-->
+                <#--<col width="130">-->
+                <#--<col width="120">-->
+                <#--<tr hidden>-->
+                    <#--<td>Row1 cell1</td>-->
+                    <#--<td>Row1 cell2</td>-->
+                    <#--<td>Row1 cell3</td>-->
+                <#--</tr>-->
+                <#--<tr>-->
+                    <#--</table>-->
 
-            <script>
-                function myCreateFunction() {
-                    var table = document.getElementById("myTable");
-                    var row = table.insertRow(0);
-                    var cell1 = row.insertCell(0);
-                    var cell2 = row.insertCell(1);
-                    var cell3 = row.insertCell(2);
-                    cell1.innerHTML = "Apple Juice";
-                    cell2.innerHTML = "1";
-                    cell3.innerHTML = "5.29";
-                }
+            <#--<script>-->
+                <#--function myCreateFunction() {-->
+                    <#--var table = document.getElementById("myTable");-->
+                    <#--var row = table.insertRow(0);-->
+                    <#--var cell1 = row.insertCell(0);-->
+                    <#--var cell2 = row.insertCell(1);-->
+                    <#--var cell3 = row.insertCell(2);-->
+                    <#--cell1.innerHTML = "Apple Juice";-->
+                    <#--cell2.innerHTML = "{{count}}";-->
+                    <#--cell3.innerHTML = "cell3.innerHTML + ${menus[1].price}";-->
+                <#--}-->
 
-                function myDeleteFunction() {
-                    document.getElementById("myTable").deleteRow(0);
-                }
-            </script>
-            <#--<div class="row">-->
-                <#--<div class="col span-1-of-3 box">-->
-                    <#--<p>Apple Juice</p>-->
-                <#--</div>-->
+                <#--function myDeleteFunction() {-->
+                    <#--document.getElementById("myTable").deleteRow(0);-->
+                <#--}-->
+            <#--</script>-->
+            <div class="row">
+                <div class="col span-1-of-3 box">
+                    <p>Apple Juice</p>
+                </div>
 
-                <#--<div class="col span-1-of-3 box">-->
-                    <#--<p>{{count}}</p>-->
-                <#--</div>-->
+                <div class="col span-1-of-3 box">
+                    <p>{{count}}</p>
+                </div>
 
-                <#--<div class="col span-1-of-3 box">-->
-                    <#--<p>$ {{price}}</p>-->
-                <#--</div>-->
-            <#--</div>-->
+                <div class="col span-1-of-3 box">
+                    <p>$ {{price | number:2}}</p>
+                </div>
+            </div>
 
 
 
@@ -364,7 +368,7 @@
                 </div>
 
                 <div class="col span-1-of-2 box">
-                    <p class="subtotalprice">$29.00</p>
+                    <p class="subtotalprice">$ {{price | number:2}}</p>
                 </div>
             </div>
 
@@ -374,7 +378,7 @@
                 </div>
 
                 <div class="col span-1-of-2 box">
-                    <p class="taxAmount">$1.45</p>
+                    <p class="taxAmount"> {{tax | number:2}} </p>
                 </div>
             </div>
 
@@ -384,13 +388,15 @@
                 </div>
 
                 <div class="col span-1-of-2 box">
-                    <p class="totalPrice">$30.45</p>
+                    <p class="totalPrice">$ {{total | number:2}}</p>
                 </div>
             </div>
         </div>
         <div class="checkbtn">
-            <button onclick=location.href="checkOut.html">Check Out</button>
+            <button onclick=location.href="checkout">Check Out</button>
         </div>
+
+
     </div>
     <div class="compantInfo">
         <div class="row">

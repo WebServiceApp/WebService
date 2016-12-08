@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/assets/vendors/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/assets/vendors/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/menuStyle.css">
-    <link rel="stylesheet" type="text/css" href="/assets/js/app.js">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/Grid.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/menuStyle.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/app.js">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya:900&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -17,7 +17,7 @@
 <header>
     <nav>
         <div class="row">
-            <img src="/assets/css/img/sign/deliSign.png" alt="DeliFood Logo" class="logo">
+            <img src="assets/css/img/sign/deliSign.png" alt="DeliFood Logo" class="logo">
             <a class="deliWord">DeliFood </a>
         </div>
     </nav>
@@ -29,18 +29,21 @@
 <div style="margin: 5% 10%;">
     <div class="checkoutpage">
         <div class="customerinfo">
-            <h2>Info</h2>
-            <div>Name <input type="text"></div>
-            <div class="delieryAddress">Delivery Address<br>
-                <input type="text" size="40px"><br></div>
-            <div>State <input type="text" size="5px">&nbsp;&nbsp;&nbsp;&nbsp;Zip Code <input type="text" size="8px"><br></div>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;House&nbsp;&nbsp;<input type="radio"
-                                                                                    name="houseType" >&nbsp;
-            &nbsp;&nbsp;&nbsp;
-            Apt&nbsp;&nbsp;<input type="radio" name="houseType">
-            <div class="commentSpace">
-                <textarea name="comment" id='comment' placeholder="Addition instruction for delivery"></textarea><br/>
-            </div>
+            <form action="orderStatePage" method="GET">
+                <h2>Info</h2>
+                <div>Name <input type="text"></div>
+                <div class="delieryAddress">Delivery Address<br>
+                    <input type="text" size="40px"><br></div>
+                <div>Sate <input type="text" size="5px">&nbsp;&nbsp;&nbsp;&nbsp;Zip Code <input type="text"
+                                                                                                size="8px"><br></div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                House&nbsp;&nbsp;<input type="radio" name="houseType">&nbsp;&nbsp;&nbsp;&nbsp;
+                Apt&nbsp;&nbsp;<input type="radio" name="houseType">
+                <div class="commentSpace">
+                    <textarea name="comment" id='comment'
+                              placeholder="Addition instruction for delivery"></textarea><br/>
+                </div>
+            </form>
         </div>
         <h2>Schedule</h2>
         <div class="scheduleTime">
@@ -85,26 +88,34 @@
             <h2>Payment</h2>
             <div class="row">
                 <div class="col span-1-of-2 box">
-                    <img src="/assets/css/img/sign/paypal_icon.png" alt="paypal">
+                <#--<img src="assets/css/img/sign/paypal_icon.png" alt="paypal">-->
+                    <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="6RNT8A4HBBJRE">
+                        <input type="image"
+                               src="assets/css/img/sign/paypal_icon.png" alt="Buy Now" class="paypalimage">
+                    </form>
                 </div>
                 <div class="col span-1-of-2 box">
-                    <img src="/assets/css/img/sign/visa-checkout.png" alt="paypal">
+                    <a href="https://developer.visa.com/portal/#login"> <img src="assets/css/img/sign/visa-checkout.png"
+                                                                             alt="VisaCheckOut"></a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col span-1-of-2 box">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="paymentType">
-                </div>
-                <div class="col span-1-of-2 box">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="paymentType">
-                </div>
-            </div>
+        <#--<div class="row">-->
+        <#--<div class="col span-1-of-2 box">-->
+        <#--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+        <#--&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="paymentType">-->
+        <#--</div>-->
+        <#--<div class="col span-1-of-2 box">-->
+        <#--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+        <#--&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="paymentType">-->
+        <#--</div>-->
+        <#--</div>-->
         </div>
         <div class="coupon">
             <h2>Coupon</h2>
-            <input type="text" size="40px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>Apply</button>
+            <input type="text" size="40px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button>Apply</button>
         </div>
     </div>
 
@@ -240,8 +251,6 @@
         </div>
     </div>
 </div>
-
-
 
 
 </body>
