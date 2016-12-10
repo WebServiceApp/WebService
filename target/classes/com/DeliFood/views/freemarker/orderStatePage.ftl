@@ -29,12 +29,19 @@
 
         <h2> Check Your Order State </h2>
         <div class="customerInfo-box">
-            <h3> Customer's Name </h3>
+            <?php
+            echo $_POST["name"];
+            echo $_POST["address"];
+            echo $_POST["state"];
+            echo $_POST["zipcode"];
+            echo $_POST['comment'];
+            ?>
+            <#--<h3> Customer's Name </h3>-->
 
-            <p class="Customer_address"> 11745 NE 8th St Bellevue, WA 98005</p>
+            <#--<p class="Customer_address"> 11745 NE 8th St Bellevue, WA 98005</p>-->
 
-            <p class="instruction-head"> Additional Instruction: </p>
-            <p class="instruction-body"> call me when you arrive at the address, phone number: 4256478989 </p>
+            <#--<p class="instruction-head"> Additional Instruction: </p>-->
+            <#--<p class="instruction-body"> call me when you arrive at the address, phone number: 4256478989 </p>-->
 
         </div>
 

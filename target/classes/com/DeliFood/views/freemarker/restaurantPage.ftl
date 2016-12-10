@@ -301,8 +301,25 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
                 </div>
             </div>
         </section>
-    </section>
-
+    <#--</section>-->
+    <#--<form action="menu" method="POST">-->
+        <#--<h2>Info</h2>-->
+        <#--<div>Name <input type="text" name="name"></div>-->
+        <#--<div class="delieryAddress">Delivery Address<br>-->
+            <#--<input type="text" name="address" size="40px"><br></div>-->
+        <#--<div>Sate <input type="text" name="state"-->
+                         <#--size="5px">&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <#--Zip Code <input type="text"-->
+                            <#--name="zipcode" size="8px"><br></div>-->
+        <#--&lt;#&ndash;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ndash;&gt;-->
+        <#--&lt;#&ndash;House&nbsp;&nbsp;<input type="radio" name="houseType">&nbsp;&nbsp;&nbsp;&nbsp;&ndash;&gt;-->
+        <#--&lt;#&ndash;Apt&nbsp;&nbsp;<input type="radio" name="houseType">&ndash;&gt;-->
+        <#--&lt;#&ndash;<div class="commentSpace">&ndash;&gt;-->
+                    <#--&lt;#&ndash;<textarea name="comment" id='comment'&ndash;&gt;-->
+                              <#--&lt;#&ndash;placeholder="Addition instruction for delivery"></textarea><br/>&ndash;&gt;-->
+        <#--&lt;#&ndash;</div>&ndash;&gt;-->
+        <#--<input type="submit" value="login"><br>-->
+    <#--</form>-->
 </section>
 
 <div class="compantInfo">

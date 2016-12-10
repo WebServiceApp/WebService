@@ -401,9 +401,16 @@
         </div>
         <div class="checkbtn">
             <button onclick=location.href="checkout">Check Out</button>
-        </div>
+            <#--test--------------------------------------->
+            <#--<?php-->
+            <#--echo $_POST["name"];-->
+            <#--echo $_POST["address"];-->
+            <#--echo $_POST["state"];-->
+            <#--echo $_POST["zipcode"];-->
+            <#--echo $_POST['comment'];-->
+            <#--?>-->
 
-
+    </div>
     </div>
     <div class="compantInfo">
         <div class="row">
