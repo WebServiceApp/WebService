@@ -225,24 +225,26 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
                         <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/blueSushi.jpeg"
-                             alt="Mayuri" class="RestaurantFrame">
+                             alt="blueSushi" class="RestaurantFrame">
                         <span class="stars">3</span>
                         <h5>$$</h5>
                         <br>
                         <h4>${restaurants[0].name}</h4>
                         <div align="right">
-                            category
+                            Japanese
                         </div>
                     </div>
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;" src="http://placehold.it/250x200"
-                             alt="MoonSoon" class="RestaurantFrame">
-                        <h5>price tag</h5>
-                        <h4>Restaurant Name</h4>
+                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/dintaifung.png"
+                             alt="dintaifung" class="RestaurantFrame">
+                        <span class="stars">3</span>
+                        <h5>$$</h5>
+                        <br>
+                        <h4>Din Tai Fung</h4>
                         <div align="right">
-                            category
+                            Chinese
                         </div>
                     </div>
                 </div>
@@ -254,12 +256,14 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
 
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;" src="http://placehold.it/250x200"
-                             alt="Kizuki" class="RestaurantFrame">
-                        <h5>price tag</h5>
-                        <h4>Restaurant Name</h4>
+                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/bonefish.JPG"
+                             alt="bonefish" class="RestaurantFrame">
+                        <span class="stars">3</span>
+                        <h5>$</h5>
+                        <br>
+                        <h4>Bone Fish</h4>
                         <div align="right">
-                            category
+                            Burger
                         </div>
                     </div>
 
@@ -267,35 +271,41 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
 
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;" src="http://placehold.it/250x200"
-                             alt="vivo53" class="RestaurantFrame">
-                        <h5>price tag</h5>
-                        <h4>Restaurant Name</h4>
+                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/doughzone.png"
+                             alt="doughzone" class="RestaurantFrame">
+                        <span class="stars">3</span>
+                        <h5>$$</h5>
+                        <br>
+                        <h4>Dough Zone</h4>
                         <div align="right">
-                            category
+                            Chinese
                         </div>
                     </div>
 
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;" src="http://placehold.it/250x200"
-                             alt="Mayuri" class="RestaurantFrame">
-                        <h5>price tag</h5>
-                        <h4>Restaurant Name</h4>
+                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/fiveguys.jpg"
+                             alt="fiveguys" class="RestaurantFrame">
+                        <span class="stars">3</span>
+                        <h5>$$</h5>
+                        <br>
+                        <h4>Five Guys</h4>
                         <div align="right">
-                            category
+                            Burger
                         </div>
                     </div>
                 </div>
                 <div class="col span-1-of-4 box">
                     <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;" src="http://placehold.it/250x200"
-                             alt="BurgerKing" class="RestaurantFrame">
-                        <h5>price tag</h5>
-                        <h4>Restaurant Name</h4>
+                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/Mcdonalds.png"
+                             alt="Mcdonalds" class="RestaurantFrame">
+                        <span class="stars">3</span>
+                        <h5>$</h5>
+                        <br>
+                        <h4>Mcdonalds</h4>
                         <div align="right">
-                            category
+                            Burger
                         </div>
                     </div>
                 </div>
