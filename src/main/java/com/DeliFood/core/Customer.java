@@ -24,12 +24,11 @@ public class Customer implements Serializable {
     private String dob;
     private String gender;
     private String phone;
+
     private String street;
     private String city;
     private String state;
     private String zipcode;
-
-
 
     public Customer() {
 
@@ -45,7 +44,6 @@ public class Customer implements Serializable {
     public Long getCustomerId() {
         return customer_id;
     }
-
     public void setCustomerId(Long customer_id) {
         this.customer_id = customer_id;
     }
@@ -54,7 +52,6 @@ public class Customer implements Serializable {
     public String getFirstName() {
         return fname;
     }
-
     public void setFirstName(String fname) {
         this.fname = fname;
     }
@@ -62,7 +59,6 @@ public class Customer implements Serializable {
     public String getLastName() {
         return lname;
     }
-
     public void setLastName(String lname) {
         this.lname = lname;
     }
@@ -70,7 +66,6 @@ public class Customer implements Serializable {
     public String getEmail() {
         return email;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
@@ -78,7 +73,6 @@ public class Customer implements Serializable {
     public String getDob() {
         return dob;
     }
-
     public void setDob(String dob) {
         this.dob = dob;
     }
@@ -86,23 +80,16 @@ public class Customer implements Serializable {
     public String getGender() {
         return gender;
     }
-
     public void setGender(String gender) {
         this.gender = gender;
     }
 
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
+    public String getPhone() { return phone; }
+    public void setPhone(String phone) { this.phone = phone; }
 
     public String  getStreet () {
         return street;
     }
-
     public void setStreet(String street) {
         this.street = street;
     }
@@ -110,7 +97,6 @@ public class Customer implements Serializable {
     public String getCity() {
         return city;
     }
-
     public void setCity(String city) {
         this.city = city;
     }
@@ -118,7 +104,6 @@ public class Customer implements Serializable {
     public String getState() {
         return state;
     }
-
     public void setState (String state) {
         this.state = state;
     }
@@ -126,7 +111,6 @@ public class Customer implements Serializable {
     public String getZipcode() {
         return zipcode;
     }
-
     public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
     }
