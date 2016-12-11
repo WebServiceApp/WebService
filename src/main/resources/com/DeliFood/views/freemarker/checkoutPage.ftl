@@ -241,7 +241,7 @@
             </div>
         </div>
         <div class="checkbtn">
-            <form action="orderStatePage" method="POST">
+            <form action="orderState" method="POST">
             <button>Place Order</button>
                 </form>
 

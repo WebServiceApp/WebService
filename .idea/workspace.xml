@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7bb79b93-1778-4602-8041-0e07cd047964" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/css/orderStateStyle.css" afterPath="$PROJECT_DIR$/src/main/resources/assets/css/orderStateStyle.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/checkoutPage.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/checkoutPage.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/orderStatePage.ftl" afterPath="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/orderStatePage.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/css/menuStyle.css" afterPath="$PROJECT_DIR$/target/classes/assets/css/menuStyle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/assets/css/orderStateStyle.css" afterPath="$PROJECT_DIR$/target/classes/assets/css/orderStateStyle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/DeliFood/views/freemarker/checkoutPage.ftl" afterPath="$PROJECT_DIR$/target/classes/com/DeliFood/views/freemarker/checkoutPage.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/DeliFood/views/freemarker/orderStatePage.ftl" afterPath="$PROJECT_DIR$/target/classes/com/DeliFood/views/freemarker/orderStatePage.ftl" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -110,20 +104,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkoutPage.ftl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="checkoutPage.ftl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/checkoutPage.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="96" />
-              <folding />
+            <state vertical-scroll-proportion="0.62695926">
+              <caret line="253" column="21" selection-start-line="253" selection-start-column="21" selection-end-line="253" selection-end-column="21" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="orderStatePage.ftl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="orderStatePage.ftl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/orderStatePage.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42319748">
+            <state vertical-scroll-proportion="15.833333">
               <caret line="134" column="63" selection-start-line="134" selection-start-column="63" selection-end-line="134" selection-end-column="63" />
               <folding />
             </state>
@@ -210,10 +206,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/checkOut.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/restaurantPage.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/css/menuStyle.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/checkoutPage.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/css/orderStateStyle.css" />
         <option value="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/menuPage.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/orderStatePage.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/checkoutPage.ftl" />
       </list>
     </option>
   </component>
@@ -1178,12 +1174,12 @@
       <option name="number" value="Default" />
       <updated>1480582139501</updated>
       <workItem from="1480582141438" duration="1214000" />
-      <workItem from="1481142857668" duration="28298000" />
+      <workItem from="1481142857668" duration="28675000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29512000" />
+    <option name="totallyTimeSpent" value="29889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1197,7 +1193,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296417" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16867469" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16867469" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33012047" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1510,19 +1506,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/checkoutPage.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/orderStatePage.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="96" />
+        <state vertical-scroll-proportion="15.833333">
+          <caret line="134" column="63" selection-start-line="134" selection-start-column="63" selection-end-line="134" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/orderStatePage.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/DeliFood/views/freemarker/checkoutPage.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42319748">
-          <caret line="134" column="63" selection-start-line="134" selection-start-column="63" selection-end-line="134" selection-end-column="63" />
-          <folding />
+        <state vertical-scroll-proportion="0.62695926">
+          <caret line="253" column="21" selection-start-line="253" selection-start-column="21" selection-end-line="253" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
