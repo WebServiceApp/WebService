@@ -29,30 +29,42 @@
 <div style="margin: 5% 10%;">
     <div class="checkoutpage">
         <div class="customerinfo">
-            <form action="orderStatePage" method="POST">
+            <form method="POST">
                 <h2>Info</h2>
-                <div>Name <input type="text" name="name"></div>
-                <div class="delieryAddress">Delivery Address<br>
-                    <input type="text" name="address" size="40px"><br></div>
-                <div>Sate <input type="text" name="state"
+                    Name <input type="text" name="name">
+                <br>
+                    Delivery Address<br>
+                    <input type="text" name="address" size="40px">
+                <br>
+
+                Sate <input type="text" name="state"
                                  size="5px">&nbsp;&nbsp;&nbsp;&nbsp;
-                    Zip Code <input type="text"
-                                   name="zipcode" size="8px"><br></div>
+                Zip Code <input type="text"
+                                   name="zipcode" size="8px">
+                <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 House&nbsp;&nbsp;<input type="radio" name="houseType">&nbsp;&nbsp;&nbsp;&nbsp;
                 Apt&nbsp;&nbsp;<input type="radio" name="houseType">
-                <div class="commentSpace">
-                    <textarea name="comment" id='comment'
+                <br>
+                <textarea name="comment" id='comment'
                               placeholder="Addition instruction for delivery"></textarea><br/>
-                </div>
-
+            </form>
+            <#--<?php-->
+            <#--echo $_POST["name"];-->
+            <#--echo $_POST["address"];-->
+            <#--echo $_POST["state"];-->
+            <#--echo $_POST["zipcode"];-->
+            <#--echo $_POST['comment'];-->
+            <#--?>-->
         </div>
+
         <h2>Schedule</h2>
         <div class="scheduleTime">
             <div class="row">
                 <div class="col span-1-of-2 box">
                     <input type="radio" name="scheduleType">&nbsp;&nbsp;&nbsp;ASAP
                 </div>
+
                 <div class="col span-1-of-2 box">
                     <input type="radio" name="scheduleType">
                     <label>&nbsp;&nbsp;&nbsp;Schedule Time
@@ -229,8 +241,10 @@
             </div>
         </div>
         <div class="checkbtn">
+            <form action="orderStatePage" method="POST">
             <button>Place Order</button>
-            </form>
+                </form>
+
             <#--test-------------------------------->
 
         </div>
