@@ -96,8 +96,14 @@ public class MenuPageResource {
                 .list();
 
 
-        for (Menu menu : menus) {
+        /*for (Menu menu : menus) {
             System.out.println("We have got menu: " + menu.getMenuItem() + " " + menu.getCategory());
+
+        }*/
+        int i = 1;
+        for (Menu menu : menus) {
+            System.out.println("We have got menu: " + menu.getMenu_id() + "at " + i);
+            i++;
 
         }
 
