@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script type="text/javascript" src="http://www.datejs.com/build/date.js"></script>
 
+
     <title>Menu</title>
 </head>
 
@@ -53,11 +54,10 @@
             <img src="/assets/css/img/sign/closeSign.png" alt="Sign Logo" id="Sign" style="width: 100%; height: auto;
     display: block; padding: 10% 30%;">
             <script>
-                var compareTime = function (){
+                var compareTime = function () {
                     var d = new Date();
-                    if(d.getHours() >= 10 && d.getHours() <= 22){
-                        document.getElementById('Sign').src="/assets/css/img/sign/openSign.png";
-//                            document.write("'/assets/css/img/sign/openSign.png'");
+                    if (d.getHours() >= 10 && d.getHours() <= 22) {
+                        document.getElementById('Sign').src = "/assets/css/img/sign/openSign.png";
                     }
                 }();
             </script>
@@ -98,25 +98,31 @@
 
                         <p class="item">Apple Juice</p>
                         <p class="price">$ ${menus[1].price}</p>
-                        <button ng-click="myFunc()" class="order">Add to Cart</button>
+                        <input id="0" type="submit" ng-click="myCreateFunction()" onclick="myCreateFunction()"
+                               class="order" value="Add to Cart"></input>
                         </p>
 
                         <script>
                             angular.module('myApp', [])
-                                    .controller('myCtrl', ['$scope', function($scope) {
-
+                                    .controller('myCtrl', ['$scope', function ($scope) {
                                         $scope.count = 0;
                                         $scope.price = 0;
                                         $scope.subtotal = 0;
                                         $scope.tax = 0;
                                         $scope.total = 0;
-                                        $scope.myFunc = function() {
+                                        $scope.myCreateFunction = function () {
                                             $scope.count++;
                                             $scope.price = $scope.price + ${menus[1].price};
-                                            $scope.subtotal = $scope.price
-                                            $scope.tax = $scope.subtotal * 0.095
+                                            $scope.subtotal = $scope.price;
+                                            $scope.tax = $scope.subtotal * 0.095;
                                             $scope.total = $scope.subtotal + $scope.tax;
                                         };
+                                        $scope.myDeleteFunction = function () {
+                                            $scope.price = $scope.price - ${menus[1].price};
+                                            $scope.subtotal = $scope.price;
+                                            $scope.tax = $scope.subtotal * 0.095;
+                                            $scope.total = $scope.subtotal + $scope.tax;
+                                        }
                                     }]);
                         </script>
 
@@ -126,16 +132,18 @@
                     <img src="/assets/css/img/burgerKing/Beverages/Cherry_ICEE__Beverages.jpg">
                     <div class="imageWords">
                         <p class="item">Cherry Ice</p>
-                        <p class="price">$ ${menus[2].price}<br></p>
-                        <button class="order">Add to Cart</button>
+                        <p class="price">$ ${menus[1].price}<br></p>
+                        <input id="1" type="submit" ng-click="myCreateFunction()" onclick="myCreateFunction()"
+                               class="order" value="Add to Cart"></input>
                     </div>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <img src="/assets/css/img/burgerKing/Beverages/Apple_Juice_Beverages.jpg">
+                    <img src="/assets/css/img/burgerKing/Beverages/Chocolate_Milk_Beverages.jpg">
                     <div class="imageWords">
-                        <p class="item">Apple Juice</p>
-                        <p class="price">$5.00<br></p>
-                        <button class="order">Add to Cart</button>
+                        <p class="item">Chocolate Milk</p>
+                        <p class="price">${menus[1].price}<br></p>
+                        <input id="2" type="submit" ng-click="myCreateFunction()" onclick="myCreateFunction()"
+                               class="order" value="Add to Cart"></input>
 
                     </div>
                 </div>
@@ -181,6 +189,7 @@
                 </div>
 
             </div>
+
             <div id="burger">
                 <div class="row">
                     <div class="col span-1-of-4 box">
@@ -284,155 +293,148 @@
                 </div>
             </div>
         </div>
+    </div>
 </div>
-    </div>
 
-    <div class="orderInfo" >
-        <h2 class="orderInfoword">Your Order</h2>
-        <div class="orderSummary">
-            <div class="row">
-                <div class="col span-1-of-3 box">
-                    <p class="orderitem">Item</p>
-                </div>
-
-                <div class="col span-1-of-3 box">
-                    <p class="quality">Qty</p>
-                </div>
-
-                <div class="col span-1-of-3 box">
-                    <p class="price">Price</p>
-                </div>
-            </div>
-            <br>
-
-            <#--<table id="myTable">-->
-                <#--<col width="140">-->
-                <#--<col width="130">-->
-                <#--<col width="120">-->
-                <#--<tr hidden>-->
-                    <#--<td>Row1 cell1</td>-->
-                    <#--<td>Row1 cell2</td>-->
-                    <#--<td>Row1 cell3</td>-->
-                <#--</tr>-->
-                <#--<tr>-->
-                    <#--</table>-->
-
-            <#--<script>-->
-                <#--function myCreateFunction() {-->
-                    <#--var table = document.getElementById("myTable");-->
-                    <#--var row = table.insertRow(0);-->
-                    <#--var cell1 = row.insertCell(0);-->
-                    <#--var cell2 = row.insertCell(1);-->
-                    <#--var cell3 = row.insertCell(2);-->
-                    <#--cell1.innerHTML = "Apple Juice";-->
-                    <#--cell2.innerHTML = "{{count}}";-->
-                    <#--cell3.innerHTML = "cell3.innerHTML + ${menus[1].price}";-->
-                <#--}-->
-
-                <#--function myDeleteFunction() {-->
-                    <#--document.getElementById("myTable").deleteRow(0);-->
-                <#--}-->
-            <#--</script>-->
-
-            <div class="row">
-                <div class="col span-1-of-3 box">
-                    <p>Apple Juice</p>
-                </div>
-
-                <div class="col span-1-of-3 box">
-                    <p>{{count}}</p>
-                </div>
-
-                <div class="col span-1-of-3 box">
-                    <p>$ {{price | number:2}}</p>
-                </div>
-            </div>
-
-
-
-
-            <#--<div class="row">-->
-                <#--<div class="col span-1-of-3 box">-->
-                    <#--<p>Burger</p>-->
-                <#--</div>-->
-
-                <#--<div class="col span-1-of-3 box">-->
-                    <#--<p>1</p>-->
-                <#--</div>-->
-
-                <#--<div class="col span-1-of-3 box">-->
-                    <#--<p>$8.00</p>-->
-                <#--</div>-->
-            <#--</div>-->
-
-        </div>
-        <div class="orderPriceSummary">
-            <div class="row">
-                <div class="col span-1-of-2 box">
-                    <p>Subtotal</p>
-                </div>
-
-                <div class="col span-1-of-2 box">
-                    <p class="subtotalprice">$ {{price | number:2}}</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col span-1-of-2 box">
-                    <p>Tax</p>
-                </div>
-
-                <div class="col span-1-of-2 box">
-                    <p class="taxAmount"> {{tax | number:2}} </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col span-1-of-2 box">
-                    <p class="totalAmount">Total: </p>
-                </div>
-
-                <div class="col span-1-of-2 box">
-                    <form action="checkout" method="get">
-                    <p class="totalPrice">$ {{total | number:2}}</p>
-                        </form>
-                </div>
-            </div>
-        </div>
-        <div class="checkbtn">
-            <button onclick=location.href="checkout">Check Out</button>
-            <#--test--------------------------------------->
-            <#--<?php-->
-            <#--echo $_POST["name"];-->
-            <#--echo $_POST["address"];-->
-            <#--echo $_POST["state"];-->
-            <#--echo $_POST["zipcode"];-->
-            <#--echo $_POST['comment'];-->
-            <#--?>-->
-
-    </div>
-    </div>
-    <div class="compantInfo">
+<div class="orderInfo">
+    <h2 class="orderInfoword">Your Order</h2>
+    <div class="orderSummary">
         <div class="row">
             <div class="col span-1-of-3 box">
-                <h3>Get to Know Us</h3>
-                <a href="#"> About Us </a><br>
-                <a href="#"> Blog </a>
+                <p class="orderitem">Item</p>
             </div>
 
             <div class="col span-1-of-3 box">
-                <h3>Let Us Help You</h3>
-                <a href="#"> Support </a><br>
-                <a href="#"> FAQ </a>
+                <p class="quality">Qty</p>
             </div>
 
             <div class="col span-1-of-3 box">
-                <h3>Doing Business With Us</h3>
-                <a href="#"> Become a partner Restaurant </a><br>
-                <a href="#"> Become a Carrier </a>
+                <p class="price">Price</p>
+            </div>
+        </div>
+        <br>
+        <form action="checkout" method="get">
+        <table id="myTable">
+            <tr>
+                <td name="item"></td>
+                <td name="qty"></td>
+                <td name="price"></td>
+            </tr>
+        </table>
+
+            </form>
+        <br>
+
+    <#--<button onclick="myDeleteFunction()">Delete row</button>-->
+
+        <script>
+            var buttons = document.getElementsByClassName("order");
+            var buttonsCount = buttons.length;
+            for (var i = 0; i <= buttonsCount; i += 1) {
+                buttons[i].onclick = function myCreateFunction(e) {
+                    var table = document.getElementById("myTable");
+                    var row = table.insertRow(0);
+                    var cell1 = row.insertCell(0);
+                    var cell2 = row.insertCell(1);
+                    var cell3 = row.insertCell(2);
+                    if(this.id == 0) {
+                    cell1.innerHTML = "Apple Juice";
+                    cell2.innerHTML = "1";
+                    cell3.innerHTML = "${menus[1].price}";
+                    }
+                    else if (this.id == 1) {
+                        cell1.innerHTML = "Cherry Ice";
+                        cell2.innerHTML = "1";
+                        cell3.innerHTML = "${menus[1].price}";
+                    }
+                    else if (this.id == 2) {
+                        cell1.innerHTML = "Chocolate Milk";
+                        cell2.innerHTML = "1";
+                        cell3.innerHTML = "${menus[1].price}";
+                    }
+                };
+            }
+//            function save() {
+//                var
+//            }
+
+            function myDeleteFunction() {
+                document.getElementById("myTable").deleteRow(0);
+            }
+        </script>
+
+
+    </div>
+    <div class="orderPriceSummary">
+        <div class="row">
+            <div class="col span-1-of-2 box">
+                <p>Subtotal</p>
+            </div>
+
+            <div class="col span-1-of-2 box">
+                <p class="subtotalprice">$ {{price | number:2}}</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-2 box">
+                <p>Tax</p>
+            </div>
+
+            <div class="col span-1-of-2 box">
+                <p class="taxAmount"> {{tax | number:2}} </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-2 box">
+                <p class="totalAmount">Total: </p>
+            </div>
+
+            <div class="col span-1-of-2 box">
+                <form action="checkout" method="get">
+                    <p class="totalPrice">$ {{total | number:2}}</p>
+                </form>
             </div>
         </div>
     </div>
+    <div class="checkbtn">
+        <#--<form action="checkout" method="get">-->
+        <button onclick=location.href="checkout">Check Out</button>
+        <#--<input type="submit" value="Check Out">-->
+        <#--</form>-->
+    <#--test--------------------------------------->
+    <#--<?php-->
+    <#--echo $_POST["name"];-->
+    <#--echo $_POST["address"];-->
+    <#--echo $_POST["state"];-->
+    <#--echo $_POST["zipcode"];-->
+    <#--echo $_POST['comment'];-->
+    <#--?>-->
+
+    </div>
+</div>
+<div class="compantInfo">
+    <div class="row">
+        <div class="col span-1-of-3 box">
+            <h3>Get to Know Us</h3>
+            <a href="#"> About Us </a><br>
+            <a href="#"> Blog </a>
+        </div>
+
+        <div class="col span-1-of-3 box">
+            <h3>Let Us Help You</h3>
+            <a href="#"> Support </a><br>
+            <a href="#"> FAQ </a>
+        </div>
+
+        <div class="col span-1-of-3 box">
+            <h3>Doing Business With Us</h3>
+            <a href="#"> Become a partner Restaurant </a><br>
+            <a href="#"> Become a Carrier </a>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
