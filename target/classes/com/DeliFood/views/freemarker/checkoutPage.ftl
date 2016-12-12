@@ -29,21 +29,22 @@
         ng-app="deliApp"
         ng-controller="mainCtrl">
 
-<script>
-    function submitForm(oFormElement) {
-        var http = new XMLHttpRequest();
-        var url = "http://localhost:8080/orderState/";
-        http.open(oFormElement.method, url, true);
-        http.send(new FormData(oFormElement));
-    }
-</script>
+<#--<script>-->
+    <#--function submitForm(oFormElement) {-->
+        <#--var http = new XMLHttpRequest();-->
+        <#--var url = "http://localhost:8080/orderState/";-->
+        <#--http.open(oFormElement.method, url, true);-->
+        <#--http.send(new FormData(oFormElement));-->
+    <#--}-->
+<#--</script>-->
 <div style="margin: 5% 10%;">
     <div class="checkoutpage">
         <div class="customerinfo">
 <<<<<<< HEAD
             <form action="orderState" method="GET">
 =======
-            <form method="POST" onsubmit="return submitForm(this)">
+<#--            <form method="POST" onsubmit="return submitForm(this)">-->
+            <form method="POST">
 >>>>>>> origin/PisethBranch
                 <h2>Info</h2>
                 Name <input type="text" name="name" REQUIRED>

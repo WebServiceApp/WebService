@@ -77,6 +77,10 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
         }
     }
 
+    function nextMenuPage(rid) {
+        window.location = "http://localhost:8080/menu/" + rid;
+    }
+
     // Handle option selection
     function filterHandler() {
         var category = document.getElementById("restaurantChoice").value;
@@ -147,9 +151,9 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
             <#list restaurants as res>
                     <div class="col span-1-of-4 box">
                         <div class="RestaurantFrame">
-                            <a href="menu?rid=${res.restaurant_id}">
+                            <#--<a href="menu/${res.restaurant_id}">-->
                             <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/${res.name}.png"
-                                 alt="${res.name}" class="RestaurantFrame">
+                                 alt="${res.name}" class="RestaurantFrame" onclick="nextMenuPage(${res.restaurant_id?string.computer})">
                             <span class="stars">${res.rating}</span>
 
                             <#if res.priceLevel == 1 ><h5>$</h5></#if>
