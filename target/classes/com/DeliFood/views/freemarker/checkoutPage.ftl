@@ -26,10 +26,19 @@
 <body
         ng-app="deliApp"
         ng-controller="mainCtrl">
+
+<script>
+    function submitForm(oFormElement) {
+        var http = new XMLHttpRequest();
+        var url = "http://localhost:8080/orderState/";
+        http.open(oFormElement.method, url, true);
+        http.send(new FormData(oFormElement));
+    }
+</script>
 <div style="margin: 5% 10%;">
     <div class="checkoutpage">
         <div class="customerinfo">
-            <form method="POST">
+            <form method="POST" onsubmit="return submitForm(this)">
                 <h2>Info</h2>
                     Name <input type="text" name="name">
                 <br>
