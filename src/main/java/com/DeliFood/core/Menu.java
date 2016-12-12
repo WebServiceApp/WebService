@@ -4,10 +4,8 @@ import java.awt.Image;
 import java.awt.geom.Arc2D;
 import java.io.Serializable;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+
 /**
  * Created by Fengjuan on 11/16/16.
  */
@@ -19,7 +17,8 @@ public class Menu implements Serializable {
     private int menu_id;
 
     private Long restaurant_id;
-    private String menu_item;
+    @Column (name = "menu_item")
+    private String name;
     private Float price;
     private String category;
     private String description;
@@ -33,7 +32,7 @@ public class Menu implements Serializable {
     public Menu(int menu_id, String menu_item, Float price) {
         this.menu_id =
                 menu_id;
-        this.menu_item = menu_item;
+        this.name = menu_item;
         this.price = price;
     };
 
@@ -43,11 +42,11 @@ public class Menu implements Serializable {
         this.menu_id = menu_id;
     }
 
-    public String getMenuItem() {
-        return menu_item;
+    public String getName() {
+        return name;
     }
-    public void setMenu_item(String menu_item) {
-        this.menu_item = menu_item;
+    public void setName(String menu_item) {
+        this.name = menu_item;
     }
 
     public String getCategory() {

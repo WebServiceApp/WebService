@@ -1,6 +1,6 @@
-<#--File: OrderStatePage.ftl
-Name:Miyu, Fuli o
--->
+<!-- OrderStatePage.ftl-->
+<!--Name:Miyu, Fuli o-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +15,8 @@ Name:Miyu, Fuli o
     <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
 
     <meta charset="UTF-8">
     <title>OrderState</title>
@@ -36,19 +38,27 @@ Name:Miyu, Fuli o
 
         <h2> Check Your Order State </h2>
         <div class="customerInfo-box" style="float: left; width: 65%">
+            Welcome <?php echo $_GET["name"]; ?><br>
+            Your email address is: <?php echo $_GET["email"]; ?>
+
+
+
             <?php
-            echo $_POST["name"];
-            echo $_POST["address"];
-            echo $_POST["state"];
-            echo $_POST["zipcode"];
-            echo $_POST['comment'];
+            echo "hahahha";
+
+            echo $_GET['name'];
+            echo $_GET["address"];
+            echo $_GET["state"];
+            echo $_GET["zipcode"];
+            echo $_GET['comment'];
             ?>
-            <#--<h3> Customer's Name </h3>-->
 
-            <#--<p class="Customer_address"> 11745 NE 8th St Bellevue, WA 98005</p>-->
+            <!--<h3> Customer's Name </h3>-->
 
-            <#--<p class="instruction-head"> Additional Instruction: </p>-->
-            <#--<p class="instruction-body"> call me when you arrive at the address, phone number: 4256478989 </p>-->
+            <!--<p class="Customer_address"> 11745 NE 8th St Bellevue, WA 98005</p>-->
+
+            <!--<p class="instruction-head"> Additional Instruction: </p>-->
+            <!--<p class="instruction-body"> call me when you arrive at the address, phone number: 4256478989 </p>-->
 
         </div>
 
@@ -61,7 +71,7 @@ Name:Miyu, Fuli o
     <div class="timeBar" style="display: inline-block">
         <div class="orderStateBar-box">
             <div id = deliverButton>
-                <#--<button onclick="move()"> Start Deliver </button>-->
+                <!--<button onclick="move()"> Start Deliver </button>-->
 
             </div>
             <div id="myProgress">

@@ -182,14 +182,28 @@ span.stars span {
 
 .col a:link,
 .col a:visited{
+<<<<<<< HEAD
+    color: #D3D3D3;
+    text-decoration: none;
+    font-size: 76%;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s;
+
+=======
 color: #D3D3D3;
 text-decoration: none;
 font-size: 76%;
 border-bottom: 1px solid transparent;
 transition: border-bottom 0.2s;
+>>>>>>> origin/PisethBranch
 }
 
 .col a:hover,
 .col a:active{
+<<<<<<< HEAD
+    color: white;
+
+=======
 color: white;
+>>>>>>> origin/PisethBranch
 }
