@@ -572,6 +572,10 @@
     <#--<button onclick="myDeleteFunction()">Delete row</button>-->
 
         <script>
+            function goToCheckout() {
+                window.location = "http://localhost:8080/checkout";
+            }
+
             var buttons = document.getElementsByClassName("order");
             var buttonsCount = buttons.length;
             for (var i = 0; i <= buttonsCount; i += 1) {
@@ -647,7 +651,7 @@
     <div class="checkbtn">
 
         <#--<form action="checkout" method="get">-->
-        <button onclick=location.href="checkout">Check Out</button>
+        <button onclick=goToCheckout()>Check Out</button>
         <#--<input type="submit" value="Check Out">-->
         <#--</form>-->
 
