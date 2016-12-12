@@ -96,10 +96,11 @@
                     <img src="/assets/css/img/burgerKing/Beverages/Apple_Juice_Beverages.jpg" alt="Apple Juice">
                     <div class="imageWords">
 
-                        <p class="item">Apple Juice</p>
-                        <p class="price">$ ${menus[1].price}</p>
+                        <p class="item">${menus[64].name}</p>
+                        <p class="price">$ ${menus[64].price}</p>
                         <input id="0" type="submit" ng-click="myCreateFunction()" onclick="myCreateFunction()"
                                class="order" value="Add to Cart"></input>
+
                         </p>
 
                         <script>
@@ -112,13 +113,13 @@
                                         $scope.total = 0;
                                         $scope.myCreateFunction = function () {
                                             $scope.count++;
-                                            $scope.price = $scope.price + ${menus[1].price};
+                                            $scope.price = $scope.price + ${menus[64].price};
                                             $scope.subtotal = $scope.price;
                                             $scope.tax = $scope.subtotal * 0.095;
                                             $scope.total = $scope.subtotal + $scope.tax;
                                         };
                                         $scope.myDeleteFunction = function () {
-                                            $scope.price = $scope.price - ${menus[1].price};
+                                            $scope.price = $scope.price - ${menus[64].price};
                                             $scope.subtotal = $scope.price;
                                             $scope.tax = $scope.subtotal * 0.095;
                                             $scope.total = $scope.subtotal + $scope.tax;
@@ -131,60 +132,129 @@
                 <div class="col span-1-of-4 box">
                     <img src="/assets/css/img/burgerKing/Beverages/Cherry_ICEE__Beverages.jpg">
                     <div class="imageWords">
-                        <p class="item">Cherry Ice</p>
-                        <p class="price">$ ${menus[1].price}<br></p>
+                        <p class="item">${menus[55].name}</p>
+                        <p class="price">$ ${menus[55].price}<br></p>
                         <input id="1" type="submit" ng-click="myCreateFunction()" onclick="myCreateFunction()"
-                               class="order" value="Add to Cart"></input>
-                    </div>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <img src="/assets/css/img/burgerKing/Beverages/Chocolate_Milk_Beverages.jpg">
-                    <div class="imageWords">
-                        <p class="item">Chocolate Milk</p>
-                        <p class="price">${menus[1].price}<br></p>
-                        <input id="2" type="submit" ng-click="myCreateFunction()" onclick="myCreateFunction()"
                                class="order" value="Add to Cart"></input>
 
                     </div>
                 </div>
                 <div class="col span-1-of-4 box">
                     <img src="/assets/css/img/burgerKing/Beverages/Chocolate_Milk_Beverages.jpg">
+                    <div class="imageWords">
+
+                        <p class="item">${menus[64].name}</p>
+                        <p class="price">$ ${menus[64].price}<br></p>
+                        <input id="2" type="submit" ng-click="myCreateFunction()" onclick="myCreateFunction()"
+                               class="order" value="Add to Cart"></input>
+
+
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <img src="/assets/css/img/burgerKing/Beverages/Chocolate_Milk_Beverages.jpg">
+                    <div class="imageWords">
+                        <p class="item">${menus[62].name}</p>
+                        <p class="price">${menus[62].price}<br></p>
+                        <button class="order">Add to Cart</button>
+
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col span-1-of-4 box">
                     <img src="/assets/css/img/burgerKing/Beverages/Coca_Cola_Beverages.jpg">
+                    <div class="imageWords">
+                        <p class="item">${menus[51].name}</p>
+                        <p class="price">${menus[51].price}<br></p>
+                        <button class="order">Add to Cart</button>
+
+                    </div>
                 </div>
                 <div class="col span-1-of-4 box">
                     <img src="/assets/css/img/burgerKing/Beverages/Coke_Beverages.jpg">
+                    <div class="imageWords">
+                        <p class="item">${menus[50].name}</p>
+                        <p class="price">${menus[50].price}<br></p>
+                        <button class="order">Add to Cart</button>
+
+                    </div>
                 </div>
                 <div class="col span-1-of-4 box">
                     <img src="/assets/css/img/burgerKing/Beverages/Diet_Coke_Beverages.jpg">
+                    <div class="imageWords">
+                        <p class="item">Diet Coke</p>
+                        <p class="price">${menus[50].price}<br></p>
+                        <button class="order">Add to Cart</button>
+
+                    </div>
                 </div>
                 <div class="col span-1-of-4 box">
                     <img src="/assets/css/img/burgerKing/Beverages/Dr_Pepper_Beverages.jpg">
+                    <div class="imageWords">
+                        <p class="item">${menus[52].name}</p>
+                        <p class="price">${menus[52].price}<br></p>
+                        <button class="order">Add to Cart</button>
+
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col span-1-of-4 box">
                     <img src="/assets/css/img/burgerKing/Beverages/Mello_Yello_Beverages.jpg">
+                    <div class="imageWords">
+                        <p class="item">${menus[54].name}</p>
+                        <p class="price">${menus[54].price}<br></p>
+                        <button class="order">Add to Cart</button>
+
+                    </div>
                 </div>
                 <div class="col span-1-of-4 box">
                     <img src="/assets/css/img/burgerKing/Beverages/Milk_Beverages.jpg">
+                    <div class="imageWords">
+                        <p class="item">${menus[63].name}</p>
+                        <p class="price">${menus[63].price}<br></p>
+                        <button class="order">Add to Cart</button>
+
+                    </div>
                 </div>
                 <div class="col span-1-of-4 box">
                     <img src="/assets/css/img/burgerKing/Beverages/Minute_Maid_Lemonade__Beverages.jpg">
+                    <div class="imageWords">
+                        <p class="item">${menus[59].name}</p>
+                        <p class="price">${menus[59].price}<br></p>
+                        <button class="order">Add to Cart</button>
+
+                    </div>
                 </div>
                 <div class="col span-1-of-4 box">
                     <img src="/assets/css/img/burgerKing/Beverages/Nestle_PureLife_Water_Beverages.jpg">
+                    <div class="imageWords">
+                        <p class="item">${menus[61].name}</p>
+                        <p class="price">${menus[61].price}<br></p>
+                        <button class="order">Add to Cart</button>
+
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col span-1-of-4 box">
                     <img src="/assets/css/img/burgerKing/Beverages/Orange_Juice_Beverages.jpg">
+                    <div class="imageWords">
+                        <p class="item">${menus[60].name}</p>
+                        <p class="price">${menus[60].price}<br></p>
+                        <button class="order">Add to Cart</button>
+
+                    </div>
                 </div>
                 <div class="col span-1-of-4 box">
                     <img src="/assets/css/img/burgerKing/Beverages/Sprite_Beverages.jpg">
+                    <div class="imageWords">
+                        <p class="item">${menus[53].name}</p>
+                        <p class="price">${menus[53].price}<br></p>
+                        <button class="order">Add to Cart</button>
+
+                    </div>
 
                 </div>
 
@@ -193,30 +263,78 @@
             <div id="burger">
                 <div class="row">
                     <div class="col span-1-of-4 box">
-                        <img src="/assets/css/img/burgerKing/burgerKing_Burger/baconCheeseBurger.png">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Burger/baconWhopperBurger.png">
+                        <div class="imageWords">
+                            <p class="item">${menus[0].name}</p>
+                            <p class="price">${menus[0].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
-                        <img src="/assets/css/img/burgerKing/burgerKing_Burger/baconCheeseBurger.png">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Burger/doubleWhopperBurger.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[1].name}</p>
+                            <p class="price">${menus[1].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
-                        <img src="/assets/css/img/burgerKing/burgerKing_Burger/baconCheeseBurger.png">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Burger/WhopperJRBurger.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[2].name}</p>
+                            <p class="price">${menus[2].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
-                        <img src="/assets/css/img/burgerKing/burgerKing_Burger/baconCheeseBurger.png">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Burger/baconKingBurger.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[3].name}</p>
+                            <p class="price">${menus[3].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col span-1-of-4 box">
-                        <img src="/assets/css/img/burgerKing/burgerKing_Burger/baconCheeseBurger.png">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Burger/xlCheeseburger.png">
+                        <div class="imageWords">
+                            <p class="item">${menus[4].name}</p>
+                            <p class="price">${menus[4].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Burger/baconCheeseBurger.png">
+                        <div class="imageWords">
+                            <p class="item">${menus[5].name}</p>
+                            <p class="price">${menus[5].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
-                        <img src="/assets/css/img/burgerKing/burgerKing_Burger/baconCheeseBurger.png">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Burger/CheeseBurger.png">
+                        <div class="imageWords">
+                            <p class="item">${menus[6].name}</p>
+                            <p class="price">${menus[6].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
-                        <img src="/assets/css/img/burgerKing/burgerKing_Burger/baconCheeseBurger.png">
+                        <img src="/assets/css/img/burgerKing/burgerKing_Burger/doubleCheeseBurger.png">
+                        <div class="imageWords">
+                            <p class="item">${menus[7].name}</p>
+                            <p class="price">${menus[7].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -224,71 +342,191 @@
                 <div class="row">
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/BK_Web_EGGNORMOUS_300x270.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[27].name}</p>
+                            <p class="price">${menus[27].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/BreakfastBrownBurrito_Thumbnail_v3.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[47].name}</p>
+                            <p class="price">${menus[47].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Croissanwich_Loaded_thumb.png">
+                        <div class="imageWords">
+                            <p class="item">${menus[36].name}</p>
+                            <p class="price">${menus[36].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/SUPREMEBFASTSAND_v2_300x270px.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[28].name}</p>
+                            <p class="price">${menus[28].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0001_Croissan27wich_Sausage_egg_Cheese.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[37].name}</p>
+                            <p class="price">${menus[37].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0002_Double_Croissan27wich_Sausage_Bacon_Egg_Cheese.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[41].name}</p>
+                            <p class="price">${menus[41].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0003_French_Toast_Sticks_0.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[31].name}</p>
+                            <p class="price">${menus[31].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0004_Hashbrowns_0.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[30].name}</p>
+                            <p class="price">${menus[30].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0006_Smooth_Roast_Coffee_0.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[33].name}</p>
+                            <p class="price">${menus[33].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0007_Smooth_Roast_Iced_Coffee_1.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[35].name}</p>
+                            <p class="price">${menus[35].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0008_Sausage_Biscuit_0.jpg">
+                        <div class="imageWords">
+                            <p class="item">Sausage Biscuit</p>
+                            <p class="price">${menus[49].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0022_Egg_and_Cheese_Croissanwich_0.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[40].name}</p>
+                            <p class="price">${menus[40].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0023_Crossan27wich_DoubleSausage_Egg_Cheese_0.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[43].name}</p>
+                            <p class="price">${menus[43].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0024_PancakesandSausage_Platter.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[29].name}</p>
+                            <p class="price">${menus[29].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0028_Croissa27nwich_Bacon_Egg_Cheese.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[38].name}</p>
+                            <p class="price">${menus[38].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0029_Croissan27wichWithHamAndSausage_0.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[42].name}</p>
+                            <p class="price">${menus[42].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0031_Biscuit_Sausage_Egg_and_Cheese.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[44].name}</p>
+                            <p class="price">${menus[44].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0035_Ultimate_Breakfast_Platter_0.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[49].name}</p>
+                            <p class="price">${menus[49].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0037_Croissanwich_Egg_Cheese.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[39].name}</p>
+                            <p class="price">${menus[39].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                     <div class="col span-1-of-4 box">
                         <img src="/assets/css/img/burgerKing/burgerKing_Breakfast/Thumb_0038_Original_Maple_Flavored_Oatmeal.jpg">
+                        <div class="imageWords">
+                            <p class="item">${menus[32].name}</p>
+                            <p class="price">${menus[32].price}<br></p>
+                            <button class="order">Add to Cart</button>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -297,6 +535,7 @@
 </div>
 
 <div class="orderInfo">
+
     <h2 class="orderInfoword">Your Order</h2>
     <div class="orderSummary">
         <div class="row">
@@ -313,6 +552,11 @@
             </div>
         </div>
         <br>
+
+            <#--</div>-->
+        <#--</div>-->
+        <#--</div>-->
+        <#--<br>-->
         <form action="checkout" method="get">
         <table id="myTable">
             <tr>
@@ -338,19 +582,19 @@
                     var cell2 = row.insertCell(1);
                     var cell3 = row.insertCell(2);
                     if(this.id == 0) {
-                    cell1.innerHTML = "Apple Juice";
+                    cell1.innerHTML = "${menus[64].name}";
                     cell2.innerHTML = "1";
-                    cell3.innerHTML = "${menus[1].price}";
+                    cell3.innerHTML = "${menus[64].price}";
                     }
                     else if (this.id == 1) {
-                        cell1.innerHTML = "Cherry Ice";
+                        cell1.innerHTML = "${menus[55].name}";
                         cell2.innerHTML = "1";
-                        cell3.innerHTML = "${menus[1].price}";
+                        cell3.innerHTML = "${menus[55].price}";
                     }
                     else if (this.id == 2) {
-                        cell1.innerHTML = "Chocolate Milk";
+                        cell1.innerHTML = "${menus[64].name}";
                         cell2.innerHTML = "1";
-                        cell3.innerHTML = "${menus[1].price}";
+                        cell3.innerHTML = "${menus[64].price}";
                     }
                 };
             }
@@ -362,6 +606,8 @@
                 document.getElementById("myTable").deleteRow(0);
             }
         </script>
+
+
 
 
     </div>
@@ -399,10 +645,12 @@
         </div>
     </div>
     <div class="checkbtn">
+
         <#--<form action="checkout" method="get">-->
         <button onclick=location.href="checkout">Check Out</button>
         <#--<input type="submit" value="Check Out">-->
         <#--</form>-->
+
     <#--test--------------------------------------->
     <#--<?php-->
     <#--echo $_POST["name"];-->
