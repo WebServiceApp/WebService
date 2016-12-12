@@ -1,5 +1,7 @@
 package com.DeliFood.resources;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.DeliFood.core.Restaurant;
@@ -14,6 +16,9 @@ import javax.ws.rs.core.*;
 import javax.ws.rs.*;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.Optional;
+import java.util.stream.Collectors;
+
+import com.google.common.collect.Lists;
 import io.dropwizard.hibernate.UnitOfWork;
 
 
@@ -47,6 +52,13 @@ public class RestaurantPageResource {
         this.counter = new AtomicLong();
     }
 
+    @POST
+    @UnitOfWork
+    public void uploadNewRestaurant(@FormParam("name") String name, @FormParam("type") String type ) {
+        String test = name;
+        String test2 = type;
+    }
+
     @GET
     @UnitOfWork
     @Produces(MediaType.TEXT_HTML)
@@ -77,16 +89,34 @@ public class RestaurantPageResource {
 //        restaurants.multiLoad(restaurants(100));
 
         List<Restaurant> restaurants = session.createCriteria(Restaurant.class).list();
-
-        for (Restaurant restaurant : restaurants) {
-            System.out.println("We have got restaurant: " + restaurant.getName() + " " + restaurant.getPhone());
-            System.out.println(restaurant.getImage());
-        }
+//
+//        for (Restaurant restaurant : restaurants) {
+//            System.out.println("We have got restaurant: " + restaurant.getName() + " " + restaurant.getPhone());
+//            System.out.println(restaurant.getImage());
+//        }
 
         session.getTransaction().commit();
         session.close();
         return restaurants;
     }
 
+    @Path("/{filter}")
+    @GET
+    @UnitOfWork
+    @Produces(MediaType.TEXT_HTML)
+    public RestaurantPageView getRestaurantsViewFreemarker(@PathParam("filter") String filter)
+    {
+        List<Restaurant> restaurants = getRestaurantByFilter( filter );
+        return new RestaurantPageView(RestaurantPageView.Template.FREEMARKER, restaurants);
+    }
 
+    private List<Restaurant> getRestaurantByFilter( String filter) {
+        List<Restaurant> original = getRestaurants();
+        List<Restaurant> restaurants = original.stream().filter( restaurant -> restaurant.getCategory().equalsIgnoreCase(filter)).collect(Collectors.toList());
+
+        if ( restaurants.isEmpty() ) {
+            restaurants = original.stream().filter( restaurant -> restaurant.getName().equalsIgnoreCase(filter)).collect(Collectors.toList());
+        }
+        return restaurants;
+    }
 }
