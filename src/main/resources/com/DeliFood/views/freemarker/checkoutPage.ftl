@@ -40,9 +40,14 @@
 <div style="margin: 5% 10%;">
     <div class="checkoutpage">
         <div class="customerinfo">
+<<<<<<< HEAD
             <form action="orderState" method="GET">
 <#--            <form method="POST" onsubmit="return submitForm(this)">-->
             <form method="POST">
+=======
+            <form  id="f1" name="placeorder" action="orderState" method="GET">
+
+>>>>>>> origin/branch_final
                 <h2>Info</h2>
                 Name <input type="text" name="name" REQUIRED>
                 <br>
@@ -61,13 +66,11 @@
                 <br>
                 <textarea name="comment" id='comment'
                           placeholder="Addition instruction for delivery"></textarea><br/>
-                <input type="submit">
+
             </form>
 
         </div>
-        <?php
-        echo "hi"
-        ?>
+
 
         <h2>Schedule</h2>
         <div class="scheduleTime">
@@ -173,6 +176,7 @@
                     <p>$5.00</p>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col span-1-of-3 box">
                     <p>Burger</p>
@@ -186,6 +190,7 @@
                     <p>$8.00</p>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col span-1-of-3 box">
                     <p>Burger</p>
@@ -266,11 +271,7 @@
         </div>
         <div class="checkbtn">
             <#--<form action="getOrder" method="GET">-->
-                <form action="orderState" method="GET">
-                <input type="submit" value="Place Order">
-            </form>
-
-
+                    <button type="submit" form="f1" value="Submit">Submit</button>
 
         </div>
     </div>
