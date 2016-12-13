@@ -1,5 +1,7 @@
 package com.DeliFood.resources;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.DeliFood.core.Restaurant;
@@ -14,6 +16,9 @@ import javax.ws.rs.core.*;
 import javax.ws.rs.*;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.Optional;
+import java.util.stream.Collectors;
+
+import com.google.common.collect.Lists;
 import io.dropwizard.hibernate.UnitOfWork;
 
 
@@ -88,5 +93,23 @@ public class RestaurantPageResource {
         return restaurants;
     }
 
+    @Path("/{filter}")
+    @GET
+    @UnitOfWork
+    @Produces(MediaType.TEXT_HTML)
+    public RestaurantPageView getRestaurantsViewFreemarker(@PathParam("filter") String filter)
+    {
+        List<Restaurant> restaurants = getRestaurantByFilter( filter );
+        return new RestaurantPageView(RestaurantPageView.Template.FREEMARKER, restaurants);
+    }
 
+    private List<Restaurant> getRestaurantByFilter( String filter) {
+        List<Restaurant> original = getRestaurants();
+        List<Restaurant> restaurants = original.stream().filter( restaurant -> restaurant.getCategory().equalsIgnoreCase(filter)).collect(Collectors.toList());
+
+        if ( restaurants.isEmpty() ) {
+            restaurants = original.stream().filter( restaurant -> restaurant.getName().equalsIgnoreCase(filter)).collect(Collectors.toList());
+        }
+        return restaurants;
+    }
 }

@@ -51,34 +51,85 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
             }
         }
     }
+
+    // Check to make sure that the page is fully loaded
+    var interval = setInterval(function() {
+        if(document.readyState === 'complete') {
+            clearInterval(interval);
+            init();
+        }
+    }, 100);
+
+    function init() {
+        var path = window.location.pathname;
+        var indexOfSlash = path.lastIndexOf("/");
+        var category = path.substr(indexOfSlash+1);
+        if ( category !== "Restaurant") {
+            var sel = document.getElementById('restaurantChoice');
+            var opts = sel.options;
+            for(var opt, j = 0; opt = opts[j]; j++) {
+                if(opt.value === category) {
+                    sel.selectedIndex = j;
+                    break;
+                }
+            }
+        }
+    }
+
+    // Handle option selection
+    function test() {
+        var category = document.getElementById("restaurantChoice").value;
+        if ( category !== "All") {
+            window.location = "http://localhost:8080/Restaurant/" + category;
+        }
+        if ( category === "All") {
+            window.location = "http://localhost:8080/Restaurant";
+        }
+    }
+    // Handle submit button
+    function test2() {
+        var name = document.getElementById("searchBox").value;
+        window.location = "http://localhost:8080/Restaurant/" + name;
+    }
+
+    // Handle star rating
+    $(function () {
+        $('span.stars').stars();
+    });
+    $.fn.stars = function () {
+        return $(this).each(function () {
+            $(this).html($('<span />').width(Math.max(0, (Math.min(5, parseFloat($(this).html())))) * 16));
+        });
+    }
 </script>
 
 <section class="section-restaurant">
     <div class="col span-2-of-5 box">
         <div class="search-box">
-            <input type="text" style=" width: 60%;"/>
-            <input type="submit" value="Search" onkeyup="myFunction()"/>
+            <input id="searchBox" type="text" style=" width: 60%;"/>
+            <input type="submit" value="Search" onclick="test2()"/>
         </div>
     </div>
     <div class="row">
 
         <div class="col span-2-of-5 box">
             <label> Filter By : &nbsp;
-                <select id="restaurantChoice" >
-                    <option value="0">Sushi</option>
-                    <option value="1">Pizza</option>
-                    <option value="2">Indian</option>
-                    <option value="3">Chinese</option>
-                    <option value="4">American</option>
-                    <option value="5">Thai</option>
-                    <option value="6">Mexican</option>
-                    <option value="7">Korean</option>
-                    <option value="8">Salad</option>
-                    <option value="9">Italian</option>
-                    <option value="10">Japanese</option>
-                    <option value="11">Vegetarian</option>
-                    <option value="12">Mediterranean</option>
-                    <option value="12">Chicken</option>
+                <select onchange="test();" id="restaurantChoice" >
+                    <option value="All">All</option>
+                    <option value="Sushi">Sushi</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="American">American</option>
+                    <option value="Thai">Thai</option>
+                    <option value="7">Mexican</option>
+                    <option value="8">Korean</option>
+                    <option value="9">Salad</option>
+                    <option value="10">Italian</option>
+                    <option value="11">Japanese</option>
+                    <option value="12">Vegetarian</option>
+                    <option value="13">Mediterranean</option>
+                    <option value="14">Chicken</option>
                 </select>
             </label>
         </div>
@@ -87,230 +138,225 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
             <div class="openNow">
                 <input type="checkbox" value="Open"> Open Now
             </div>
-            <!--</div><div class="col span-1-of-7 box">&ndash;&gt;-->
-            <!--<div class="withIn30min">-->
-            <!--<input type="checkbox" value="Open"> With in 30m-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col span-1.5-of-7 box">-->
-            <!--<div class="Vegetarian">-->
-            <!--<input type="checkbox" value="Open"> Vegetarian Option-->
-            <!--</div>-->
-            <!--</div>
-            <!---->
         </div>
     </div>
 
     <section class="section-restaurant-Box">
-        <!--<h3>test</h3>-->
-        <section class="section-restaurant-Box">
-            <div class="row">
+        <div class="row">
+            <#list restaurants as res>
+                    <div class="col span-1-of-4 box">
+                        <div class="RestaurantFrame">
+                            <a href="menu?rid=${res.restaurant_id}">
+                            <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/${res.name}.png"
+                                 alt="${res.name}" class="RestaurantFrame">
+                            <span class="stars">${res.rating}</span>
 
-                <div class="col span-1-of-4 box">
-                    <div class="RestaurantFrame">
-
-                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/kiZuKi.png"   alt="Kizuki" class="RestaurantFrame">
-                        <span class="stars">3</span>
-
-                        <script>
-                            $(function () {
-                                $('span.stars').stars();
-                            });
-                            $.fn.stars = function () {
-                                return $(this).each(function () {
-                                    $(this).html($('<span />').width(Math.max(0, (Math.min(5, parseFloat($(this).html())))) * 16));
-                                });
-                            }
-                        </script>
-                        <h5>$$</h5>
-                    <#--<script>-->
-                    <#--angular.module('myApp', [])-->
-                    <#--.controller('myCtrl', ['$scope', function($scope) {-->
-                    <#--$scope.count = 0;-->
-                    <#--$scope.price = 0.00;-->
-                    <#--$scope.mPriceLevel= function() {-->
-                    <#--if()-->
-                    <#--};-->
-                    <#--}]);-->
-                    <#--</script>-->
-
-                        <br>
-                        <h4>${restaurants[4].name}</h4>
-                        <h6>Japanese, Ramen</h6>
-                    </div>
-                </div>
-
-                <div class="col span-1-of-4 box">
-                    <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/vivo53.png"
-                             alt="vivo53" class="RestaurantFrame">
-                        <span class="stars">3</span>
-
-                        <h5>$$$</h5>
-                        <br>
-                        <h4>${restaurants[6].name}</h4>
-                        <div align="right">
-                            Pizza, Italian
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="col span-1-of-4 box">
-                    <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/maruri.png"
-                             alt="Mayuri" class="RestaurantFrame">
-                        <span class="stars">3</span>
-                        <h5>$$</h5>
-                        <br>
-
-                        <h4>${restaurants[5].name}</h4>
-                        <div align="right">
-                            Indian
-                        </div>
-                    </div>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <div class="RestaurantFrame">
-                        <a href="menu?rid=1111">
-                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/burgerKingLogo.jpeg"
-                                            alt="BurgerKing" class="RestaurantFrame"></a>
-                            <span class="stars">3</span>
-                            <h5>$</h5>
+                            <#if res.priceLevel == 1 ><h5>$</h5></#if>
+                            <#if res.priceLevel == 2 ><h5>$$</h5></#if>
+                            <#if res.priceLevel == 3 ><h5>$$$</h5></#if>
+                            <#if res.priceLevel == 4 ><h5>$$$$</h5></#if>
+                            <#if res.priceLevel == 5 ><h5>$$$$$</h5></#if>
                             <br>
-                            <h4>${restaurants[1].name}</h4>
+                            <h4>${res.name}</h4>
                             <div align="right">
-                                Fast Food, Burger
+                                ${res.category}
                             </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-restaurant-Box1">
-            <div class="row">
-
-                <div class="col span-1-of-4 box">
-                    <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;"
-                             src="/assets/css/img/restaurantPage/famousEzellChicken.png"
-                             alt="Ezell" class="RestaurantFrame">
-                        <span class="stars">3</span>
-                        <h5>$</h5>
-                        <br>
-                        <h4>${restaurants[3].name}</h4>
-                        <div align="right">
-                            Fast Food, Burger
                         </div>
                     </div>
+            </#list>
+        </div>
 
-                </div>
 
-                <div class="col span-1-of-4 box">
-                    <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;"
-                             src="/assets/css/img/restaurantPage/theCheesecakeFactory.png"
-                             alt="CheeseFactory" class="RestaurantFrame">
-                        <span class="stars">3</span>
-                        <h5>$$</h5>
-                        <br>
-                        <h4>${restaurants[2].name}</h4>
-                        <div align="right">
-                            American
-                        </div>
-                    </div>
 
-                </div>
-                <div class="col span-1-of-4 box">
-                    <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/blueSushi.jpeg"
-                             alt="blueSushi" class="RestaurantFrame">
-                        <span class="stars">3</span>
-                        <h5>$$</h5>
-                        <br>
-                        <h4>${restaurants[0].name}</h4>
-                        <div align="right">
-                            Japanese
-                        </div>
-                    </div>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/dintaifung.png"
-                             alt="dintaifung" class="RestaurantFrame">
-                        <span class="stars">3</span>
-                        <h5>$$</h5>
-                        <br>
-                        <h4>Din Tai Fung</h4>
-                        <div align="right">
-                            Chinese
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="section-restaurant-Box2">
-            <div class="row">
+        <#--<section class="section-restaurant-Box">-->
+            <#--<div class="row">-->
 
-                <div class="col span-1-of-4 box">
-                    <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/bonefish.JPG"
-                             alt="bonefish" class="RestaurantFrame">
-                        <span class="stars">3</span>
-                        <h5>$</h5>
-                        <br>
-                        <h4>Bone Fish</h4>
-                        <div align="right">
-                            Burger
-                        </div>
-                    </div>
+                <#--<div class="col span-1-of-4 box">-->
+                    <#--<div class="RestaurantFrame">-->
 
-                </div>
+                        <#--<img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/kiZuKi.png"   alt="Kizuki" class="RestaurantFrame">-->
+                        <#--<span class="stars">3</span>-->
 
-                <div class="col span-1-of-4 box">
-                    <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/doughzone.png"
-                             alt="doughzone" class="RestaurantFrame">
-                        <span class="stars">3</span>
-                        <h5>$$</h5>
-                        <br>
-                        <h4>Dough Zone</h4>
-                        <div align="right">
-                            Chinese
-                        </div>
-                    </div>
 
-                </div>
-                <div class="col span-1-of-4 box">
-                    <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/fiveguys.jpg"
-                             alt="fiveguys" class="RestaurantFrame">
-                        <span class="stars">3</span>
-                        <h5>$$</h5>
-                        <br>
-                        <h4>Five Guys</h4>
-                        <div align="right">
-                            Burger
-                        </div>
-                    </div>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <div class="RestaurantFrame">
-                        <img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/Mcdonalds.png"
-                             alt="Mcdonalds" class="RestaurantFrame">
-                        <span class="stars">3</span>
-                        <h5>$</h5>
-                        <br>
-                        <h4>Mcdonalds</h4>
-                        <div align="right">
-                            Burger
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        <#--<h5>$$$</h5>-->
+                        <#--<br>-->
+                        <#--<h4>${restaurants[4].name}</h4>-->
+                        <#--<h6>Japanese, Ramen</h6>-->
+                    <#--</div>-->
+                <#--</div>-->
+
+                <#--<div class="col span-1-of-4 box">-->
+                    <#--<div class="RestaurantFrame">-->
+                        <#--<img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/vivo53.png"-->
+                             <#--alt="vivo53" class="RestaurantFrame">-->
+                        <#--<span class="stars">3</span>-->
+
+                        <#--<h5>$$$</h5>-->
+                        <#--<br>-->
+                        <#--<h4>${restaurants[6].name}</h4>-->
+                        <#--<div align="right">-->
+                            <#--Pizza, Italian-->
+                        <#--</div>-->
+
+                    <#--</div>-->
+                <#--</div>-->
+
+                <#--<div class="col span-1-of-4 box">-->
+                    <#--<div class="RestaurantFrame">-->
+                        <#--<img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/maruri.png"-->
+                             <#--alt="Mayuri" class="RestaurantFrame">-->
+                        <#--<span class="stars">3</span>-->
+                        <#--<h5>$$</h5>-->
+                        <#--<br>-->
+
+                        <#--<h4>${restaurants[5].name}</h4>-->
+                        <#--<div align="right">-->
+                            <#--Indian-->
+                        <#--</div>-->
+                    <#--</div>-->
+                <#--</div>-->
+                <#--<div class="col span-1-of-4 box">-->
+                    <#--<div class="RestaurantFrame">-->
+                        <#--<a href="menu?rid=1111">-->
+                        <#--<img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/${restaurants[0].name}.jpeg"-->
+                                            <#--alt="BurgerKing" class="RestaurantFrame"></a>-->
+                            <#--<span class="stars">3</span>-->
+                            <#--<h5>$</h5>-->
+                            <#--<br>-->
+                            <#--<h4>${restaurants[0].name}</h4>-->
+                            <#--<div align="right">-->
+                                <#--Fast Food, Burger-->
+                            <#--</div>-->
+
+                    <#--</div>-->
+                <#--</div>-->
+            <#--</div>-->
+        <#--</section>-->
+
+        <#--<section class="section-restaurant-Box1">-->
+            <#--<div class="row">-->
+
+                <#--<div class="col span-1-of-4 box">-->
+                    <#--<div class="RestaurantFrame">-->
+                        <#--<img style="border:0px groove gold;"-->
+                             <#--src="/assets/css/img/restaurantPage/famousEzellChicken.png"-->
+                             <#--alt="Ezell" class="RestaurantFrame">-->
+                        <#--<span class="stars">3</span>-->
+                        <#--<h5>$</h5>-->
+                        <#--<br>-->
+                        <#--<h4>${restaurants[3].name}</h4>-->
+                        <#--<div align="right">-->
+                            <#--Fast Food, Burger-->
+                        <#--</div>-->
+                    <#--</div>-->
+
+                <#--</div>-->
+
+                <#--<div class="col span-1-of-4 box">-->
+                    <#--<div class="RestaurantFrame">-->
+                        <#--<img style="border:0px groove gold;"-->
+                             <#--src="/assets/css/img/restaurantPage/theCheesecakeFactory.png"-->
+                             <#--alt="CheeseFactory" class="RestaurantFrame">-->
+                        <#--<span class="stars">3</span>-->
+                        <#--<h5>$$</h5>-->
+                        <#--<br>-->
+                        <#--<h4>${restaurants[2].name}</h4>-->
+                        <#--<div align="right">-->
+                            <#--American-->
+                        <#--</div>-->
+                    <#--</div>-->
+
+                <#--</div>-->
+                <#--<div class="col span-1-of-4 box">-->
+                    <#--<div class="RestaurantFrame">-->
+                        <#--<img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/blueSushi.jpeg"-->
+                             <#--alt="blueSushi" class="RestaurantFrame">-->
+                        <#--<span class="stars">3</span>-->
+                        <#--<h5>$$</h5>-->
+                        <#--<br>-->
+                        <#--<h4>${restaurants[0].name}</h4>-->
+                        <#--<div align="right">-->
+                            <#--Japanese-->
+                        <#--</div>-->
+                    <#--</div>-->
+                <#--</div>-->
+                <#--<div class="col span-1-of-4 box">-->
+                    <#--<div class="RestaurantFrame">-->
+                        <#--<img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/dintaifung.png"-->
+                             <#--alt="dintaifung" class="RestaurantFrame">-->
+                        <#--<span class="stars">3</span>-->
+                        <#--<h5>$$</h5>-->
+                        <#--<br>-->
+                        <#--<h4>Din Tai Fung</h4>-->
+                        <#--<div align="right">-->
+                            <#--Chinese-->
+                        <#--</div>-->
+                    <#--</div>-->
+                <#--</div>-->
+            <#--</div>-->
+        <#--</section>-->
+
+        <#--<section class="section-restaurant-Box2">-->
+            <#--<div class="row">-->
+
+                <#--<div class="col span-1-of-4 box">-->
+                    <#--<div class="RestaurantFrame">-->
+                        <#--<img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/bonefish.JPG"-->
+                             <#--alt="bonefish" class="RestaurantFrame">-->
+                        <#--<span class="stars">3</span>-->
+                        <#--<h5>$</h5>-->
+                        <#--<br>-->
+                        <#--<h4>Bone Fish</h4>-->
+                        <#--<div align="right">-->
+                            <#--Burger-->
+                        <#--</div>-->
+                    <#--</div>-->
+
+                <#--</div>-->
+
+                <#--<div class="col span-1-of-4 box">-->
+                    <#--<div class="RestaurantFrame">-->
+                        <#--<img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/doughzone.png"-->
+                             <#--alt="doughzone" class="RestaurantFrame">-->
+                        <#--<span class="stars">3</span>-->
+                        <#--<h5>$$</h5>-->
+                        <#--<br>-->
+                        <#--<h4>Dough Zone</h4>-->
+                        <#--<div align="right">-->
+                            <#--Chinese-->
+                        <#--</div>-->
+                    <#--</div>-->
+
+                <#--</div>-->
+                <#--<div class="col span-1-of-4 box">-->
+                    <#--<div class="RestaurantFrame">-->
+                        <#--<img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/fiveguys.jpg"-->
+                             <#--alt="fiveguys" class="RestaurantFrame">-->
+                        <#--<span class="stars">3</span>-->
+                        <#--<h5>$$</h5>-->
+                        <#--<br>-->
+                        <#--<h4>Five Guys</h4>-->
+                        <#--<div align="right">-->
+                            <#--Burger-->
+                        <#--</div>-->
+                    <#--</div>-->
+                <#--</div>-->
+                <#--<div class="col span-1-of-4 box">-->
+                    <#--<div class="RestaurantFrame">-->
+                        <#--<img style="border:0px groove gold;" src="/assets/css/img/restaurantPage/Mcdonalds.png"-->
+                             <#--alt="Mcdonalds" class="RestaurantFrame">-->
+                        <#--<span class="stars">3</span>-->
+                        <#--<h5>$</h5>-->
+                        <#--<br>-->
+                        <#--<h4>Mcdonalds</h4>-->
+                        <#--<div align="right">-->
+                            <#--Burger-->
+                        <#--</div>-->
+                    <#--</div>-->
+                <#--</div>-->
+            <#--</div>-->
+        <#--</section>-->
     <#--</section>-->
     <#--<form action="menu" method="POST">-->
         <#--<h2>Info</h2>-->
@@ -353,5 +399,6 @@ Description: Issue: 1.Reading the rating int still have error. It is the type er
         </div>
     </div>
 </div>
+    <script scr="test.js"></script>
 </body>
 </html>
