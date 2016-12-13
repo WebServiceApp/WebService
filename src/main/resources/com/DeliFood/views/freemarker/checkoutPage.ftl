@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya:900&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
 
     <title>Checkout</title>
 </head>
@@ -26,37 +28,43 @@
 <body
         ng-app="deliApp"
         ng-controller="mainCtrl">
+
+<#--<script>-->
+    <#--function submitForm(oFormElement) {-->
+        <#--var http = new XMLHttpRequest();-->
+        <#--var url = "http://localhost:8080/orderState/";-->
+        <#--http.open(oFormElement.method, url, true);-->
+        <#--http.send(new FormData(oFormElement));-->
+    <#--}-->
+<#--</script>-->
 <div style="margin: 5% 10%;">
     <div class="checkoutpage">
         <div class="customerinfo">
-            <form method="POST">
+            <form  id="f1" name="placeorder" action="orderState" method="GET">
+
                 <h2>Info</h2>
-                    Name <input type="text" name="name">
+                Name <input type="text" name="name" REQUIRED>
                 <br>
-                    Delivery Address<br>
-                    <input type="text" name="address" size="40px">
+                Delivery Address<br>
+                <input type="text" name="address" size="40px" REQUIRED>
                 <br>
 
                 Sate <input type="text" name="state"
-                                 size="5px">&nbsp;&nbsp;&nbsp;&nbsp;
+                            size="5px" REQUIRED>&nbsp;&nbsp;&nbsp;&nbsp;
                 Zip Code <input type="text"
-                                   name="zipcode" size="8px">
+                                name="zipcode" size="8px" REQUIRED>
                 <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                House&nbsp;&nbsp;<input type="radio" name="houseType">&nbsp;&nbsp;&nbsp;&nbsp;
-                Apt&nbsp;&nbsp;<input type="radio" name="houseType">
+                House&nbsp;&nbsp;<input type="radio" name="houseType" required>&nbsp;&nbsp;&nbsp;&nbsp;
+                Apt&nbsp;&nbsp;<input type="radio" name="houseType" required>
                 <br>
                 <textarea name="comment" id='comment'
-                              placeholder="Addition instruction for delivery"></textarea><br/>
+                          placeholder="Addition instruction for delivery"></textarea><br/>
+
             </form>
-            <#--<?php-->
-            <#--echo $_POST["name"];-->
-            <#--echo $_POST["address"];-->
-            <#--echo $_POST["state"];-->
-            <#--echo $_POST["zipcode"];-->
-            <#--echo $_POST['comment'];-->
-            <#--?>-->
+
         </div>
+
 
         <h2>Schedule</h2>
         <div class="scheduleTime">
@@ -162,6 +170,7 @@
                     <p>$5.00</p>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col span-1-of-3 box">
                     <p>Burger</p>
@@ -175,6 +184,7 @@
                     <p>$8.00</p>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col span-1-of-3 box">
                     <p>Burger</p>
@@ -231,21 +241,31 @@
 
             <div class="row">
                 <div class="col span-1-of-2 box">
-                    <p class="totalAmount">Total:  </p>
+                    <p class="totalAmount">Total: </p>
 
                 </div>
 
                 <div class="col span-1-of-2 box">
-                    <p class="totalPrice">$30.45</p>
+                    <p class="totalPrice">$30.45 </p>
+
                 </div>
             </div>
+        <#--$scope.count = 0;-->
+        <#--$scope.price = 0;-->
+        <#--$scope.subtotal = 0;-->
+        <#--$scope.tax = 0;-->
+        <#--$scope.total = 0;-->
+        <#--$scope.myFunc = function() {-->
+        <#--$scope.count++;-->
+        <#--$scope.price = $scope.price + ${menus[1].price};-->
+        <#--$scope.subtotal = $scope.price-->
+        <#--$scope.tax = $scope.subtotal * 0.095-->
+        <#--$scope.total = $scope.subtotal + $scope.tax;-->
+        <#--};-->
         </div>
         <div class="checkbtn">
-            <form action="orderState" method="POST">
-            <button>Place Order</button>
-                </form>
-
-            <#--test-------------------------------->
+            <#--<form action="getOrder" method="GET">-->
+                    <button type="submit" form="f1" value="Submit">Submit</button>
 
         </div>
     </div>

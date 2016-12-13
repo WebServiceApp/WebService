@@ -1,8 +1,6 @@
 package com.DeliFood;
 
-import com.DeliFood.views.HomePageView;
 import io.dropwizard.Application;
-import io.dropwizard.*;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import com.DeliFood.resources.HomePageResource;
@@ -11,10 +9,7 @@ import com.DeliFood.resources.MenuPageResource;
 import com.DeliFood.resources.CheckoutPageResource;
 import com.DeliFood.resources.OrderStatePageResource;
 import io.dropwizard.views.ViewBundle;
-import io.dropwizard.Bundle;
 import io.dropwizard.assets.AssetsBundle;
-
-import javax.jws.WebService;
 
 
 public class WebServiceApplication extends Application<WebServiceConfiguration> {
@@ -35,8 +30,6 @@ public class WebServiceApplication extends Application<WebServiceConfiguration> 
         bootstrap.addBundle(new AssetsBundle());
 
     }
-
-
 
     @Override
     public void run(final WebServiceConfiguration configuration,
@@ -71,5 +64,4 @@ public class WebServiceApplication extends Application<WebServiceConfiguration> 
         environment.jersey().register(checkoutPageResource);
         environment.jersey().register(orderStatePageResource);
     }
-
 }

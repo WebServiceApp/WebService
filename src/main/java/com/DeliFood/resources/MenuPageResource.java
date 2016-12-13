@@ -11,10 +11,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -37,10 +34,11 @@ public class MenuPageResource {
         this.counter = new AtomicLong();
     }
 
+    @Path("/{rid}")
     @GET
     @UnitOfWork
     @Produces(MediaType.TEXT_HTML)
-    public MenuPageView getMenuViewFreemarker(@QueryParam("rid") Long rid)
+    public MenuPageView getMenuViewFreemarker(@PathParam("rid") Long rid)
     {
         List<Menu> items= getMenu(rid);
         List<Menu> menus = new ArrayList<Menu>();
@@ -96,8 +94,14 @@ public class MenuPageResource {
                 .list();
 
 
-        for (Menu menu : menus) {
+        /*for (Menu menu : menus) {
             System.out.println("We have got menu: " + menu.getMenuItem() + " " + menu.getCategory());
+
+        }*/
+        int i = 1;
+        for (Menu menu : menus) {
+            System.out.println("We have got menu: " + menu.getMenu_id() + "at " + i);
+            i++;
 
         }
 
